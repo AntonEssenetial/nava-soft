@@ -1,0 +1,26 @@
+pageList:
+  data:
+    -
+      title: Home
+      url: home
+    -
+      title: Blog
+      url: blog
+    -
+      title: About 
+      url: about
+    -
+      title: Career
+      url: career
+    - 
+      title: Contact
+      url: contact
+    -
+      title: Projects
+      url: projects
+    -
+      title: Single-page
+      url: single-page
+    -
+      title: Contacts
+      url: contacts

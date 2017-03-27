@@ -1,0 +1,10 @@
+---
+  config:
+    projectName: NAVATSOFT
+    lang: en
+    path:
+      favicons: assets/favicons
+      styles: assets/css
+      scripts: assets/javascripts
+      images: assets/images
+      fonts: assets/fonts

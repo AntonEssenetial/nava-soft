@@ -1,0 +1,265 @@
+{
+	"pageList": {
+		"data": [
+			{
+				"title": "Home",
+				"url": "home"
+			},
+			{
+				"title": "Blog",
+				"url": "blog"
+			},
+			{
+				"title": "About",
+				"url": "about"
+			},
+			{
+				"title": "Career",
+				"url": "career"
+			},
+			{
+				"title": "Contact",
+				"url": "contact"
+			},
+			{
+				"title": "Projects",
+				"url": "projects"
+			},
+			{
+				"title": "Single-page",
+				"url": "single-page"
+			},
+			{
+				"title": "Contacts",
+				"url": "contacts"
+			}
+		]
+	},
+	"breadCrumbs": {
+		"default": [
+			{
+				"type": "link",
+				"title": "Home"
+			},
+			{
+				"type": "link",
+				"title": "Category"
+			},
+			{
+				"type": "link",
+				"title": "Subcategory"
+			},
+			{
+				"title": "Page"
+			}
+		]
+	},
+	"config": {
+		"projectName": "NAVATSOFT",
+		"lang": "en",
+		"path": {
+			"favicons": "assets/favicons",
+			"styles": "assets/css",
+			"scripts": "assets/javascripts",
+			"images": "assets/images",
+			"fonts": "assets/fonts"
+		}
+	},
+	"footerNav": {
+		"default": [
+			{
+				"title": "Окомпании",
+				"url": "about"
+			},
+			{
+				"title": "Правила компании",
+				"url": "rules"
+			},
+			{
+				"title": "Политика конфиденциальности",
+				"url": "policy"
+			},
+			{
+				"title": "FAQ",
+				"url": "faq"
+			},
+			{
+				"title": "Новости",
+				"url": "news"
+			},
+			{
+				"title": "Контакты",
+				"url": "contacts"
+			}
+		],
+		"serv": [
+			{
+				"title": "Инвесторам",
+				"url": "investments"
+			},
+			{
+				"title": "Партнерам",
+				"url": "referral-program"
+			},
+			{
+				"title": "Гарантии",
+				"url": "guarantees"
+			}
+		]
+	},
+	"head": {
+		"default": {
+			"title": "Default title",
+			"mobile": true,
+			"meta": {
+				"author": "Murat Khatypov",
+				"description": "Put value here",
+				"keywords": "Put value here"
+			},
+			"og": {
+				"url": "https://",
+				"description": "Description",
+				"image": {
+					"path": "assets/images/content/preview.png",
+					"type": "image/png",
+					"width": 500,
+					"height": 300
+				}
+			}
+		},
+		"index": {
+			"title": "Список",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"home": {
+			"title": "Home",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"projects": {
+			"title": "Projects",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"about": {
+			"title": "About us",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"career": {
+			"title": "career",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"contact": {
+			"title": "Contact us",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"singlePage": {
+			"title": "Single page",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		}
+	},
+	"mainMenu": {
+		"default": [
+			{
+				"title": "Home",
+				"url": "home",
+				"submenu": false
+			},
+			{
+				"title": "Investments",
+				"url": "investments",
+				"submenu": false
+			},
+			{
+				"title": "About",
+				"url": "about",
+				"submenu": false
+			},
+			{
+				"title": "Referral program",
+				"url": "referral-program",
+				"submenu": false
+			},
+			{
+				"title": "Guarantees",
+				"url": "guarantees",
+				"submenu": false
+			},
+			{
+				"title": "Faq",
+				"url": "faq",
+				"submenu": false
+			},
+			{
+				"title": "News",
+				"url": "news",
+				"submenu": false
+			},
+			{
+				"title": "Contacts",
+				"url": "contacts",
+				"submenu": false
+			},
+			{
+				"title": "Rules",
+				"url": "rules",
+				"submenu": false
+			}
+		],
+		"account": [
+			{
+				"title": "Account",
+				"url": "cabinet01",
+				"submenu": false
+			},
+			{
+				"title": "Invest",
+				"url": "cabinet02",
+				"submenu": false
+			},
+			{
+				"title": "Withdrawal",
+				"url": "cabinet03",
+				"submenu": false
+			},
+			{
+				"title": "Operations",
+				"url": "cabinet04",
+				"submenu": false
+			},
+			{
+				"title": "Partners",
+				"url": "cabinet05",
+				"submenu": false
+			},
+			{
+				"title": "Settings",
+				"url": "cabinet06",
+				"submenu": false
+			},
+			{
+				"title": "Exit",
+				"url": false,
+				"submenu": false
+			}
+		]
+	},
+	"side-nav": {
+		"default": null
+	},
+	"static-menu": {
+		"default": null
+	}
+}

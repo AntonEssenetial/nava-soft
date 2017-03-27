@@ -1,0 +1,1141 @@
+// Import plugins
+zozo(false)
+sprites(false)
+royal-slider(false)
+animate-css(false)
+bxslider(false)
+slick(false)
+customScrollbar(false)
+simpleLightBox(false)
+formstyler(false)
+remodal(false)
+lightslider(false)
+lightgallery(false)
+
+
+// Css custom components
+customCheckbox(false)
+paybuttons(false)
+bannerLink(false)
+charts(false)
+pagination(false)
+FAQcontainer(false)
+responsiveSlide(false)
+customScrolCss(false)
+readCrumbs(false)
+responsiveMenu(false)
+responsiveIframe(false)
+
+
+$IMG-PATH = '../images/background/'
+// Now you can use the function image-url
+// .element
+//   background-image image-url('logo.png')
+
+// And the font-url
+$FONT-PATH = '../fonts/lato/'
+font-face('Lato-Bold', 'Lato-Bold', 'normal', 'normal')
+font-face('Lato-Regular', 'Lato-Regular', 'normal', 'normal')
+font-face('Lato-Light', 'Lato-Light', 'normal', 'normal')
+font-face('Lato-LightItalic', 'Lato-LightItalic', 'normal', 'normal')
+bold()
+  font-family 'Lato-Bold'
+reg()
+  font-family 'Lato-Regular'
+light()
+  font-family 'Lato-Light'
+italic()
+  font-family 'Lato-Lightitalic'
+  
+// Bdoy font 
+$body-font = 'Lato-Regular'
+
+
+// Container-width 
+$container-width = 1240px
+$container-padding = 0 20px
+
+
+// Link - var
+$link-size = 14px
+$link-color = black
+$link-hover-color = $soft-aqua
+$link-text-docoration = underline
+$link-text-docoration-hover = none
+
+
+// Text - var
+$text-size = 14px
+$text-color = $dark
+$text-padding = 18px
+$text-line-height = 23px
+
+
+// Span - var
+$span-size = 14px
+$span-color = $dark
+
+
+// Heading - sive 
+$h1 = 50px
+$h2 = 36px
+$h3 = 16px
+$h4 = 24px
+$h5 = 20px
+$h6 = 14px
+$h-color = $dark
+
+
+// Col
+$col-margin = 30px
+
+
+// Label - input
+$input-size = 18px
+$input-color = $dark
+$input-background = white
+$input-border-radius = 0
+$input-height = 38px
+$input-margin = 7px 0 0 0 
+$label-margin = 0 0 20px 0
+$label-color = $dark 
+$label-size = 11px
+$input-padding = 10px 10px
+$input-border-color = $border
+$place-holder-default = grey2
+input-border()
+  border 1px solid $input-border-color
+  &:focus 
+    border-color $dark-aqua
+    color $dark
+
+
+// Banner color link 
+$banner-link-color = $dark
+
+
+// Buttons
+$button-radius = 0px
+$button-height = 46px
+$button-padding = 0 25px
+$button-size = 14px
+$button-text-transform = uppercase
+$button-color = $dark-aqua
+$button-border = $aqua
+$button-background = $aqua
+$button-hover-color = $dark-aqua
+$button-border-hover-color = $button-hover
+$button-background-hover-color = $button-hover
+// Button xl
+$button-xl-width = auto
+$button-xl-height = 66px
+$button-xl-font-size = 16px
+$button-xl-font-weight = normal 
+// Button xs
+$button-xs-width = auto
+$button-xs-height = 23px
+$button-xs-font-size = 14px
+$button-xs-font-weight = bold 
+
+
+// Box sizing
+*
+  box-sizing border-box
+
+
+// Wrapper
+.container2
+  width 1040px 
+  margin 0 auto 
+  position: relative
+.container 
+  width $container-width
+  margin 0 auto
+  padding $container-padding
+  position: relative
+.container-xs
+  width 1040px 
+  margin 0 auto 
+  position relative
+.container-m
+  width 1267px
+  margin 0 auto 
+  position: relative
+  
+  
+// Fonts
+roboto = 'Roboto', sans-serif;
+ptsans = 'Pt sans', sans-serif;
+cormorant = 'Cormorant', serif;
+$placeholderFont = 'Lato-Light';
+
+
+// Native - Colors
+$brown         =  #e0914c
+$dark          =  #3d3d3d
+$yellow        =  #f5aa00
+$blue          =  #2763b0
+$aqua          =  #61dfdd
+$dark-aqua     =  #025958
+$soft-aqua     =  #518fa6
+$orange        =  #f17300
+$green         =  #408c09
+$purple        =  purple 
+$pink          =  pink
+$red           =  #be000d
+$milk          =  #e5e1d0
+$gold          =  #d09700
+$soft          =  #f1f0ed
+$grey          =  #a6a6a6
+$grey2         =  #646669
+$grey3         =  #6f6f6f
+
+
+$border        =  #d1d1d1
+$border-grey   =  #484848
+$dash-border   =  #ececec
+
+
+$hover         =  $gold
+$button-hover  =  #48cecc
+
+
+// Input colors - readonly - disabled - succes - error
+$BGreadonly      =  #f9f8f6
+$BGdisabled      =  #f9f8f6
+$border-disabled =  #d1d1d1
+$Dcolor          =  #9f9f9f
+$readonly        =  $grey2
+$disabled        =  $milk
+$success         =  #4ac3c1
+$error           =  #ed5565
+$information     =  #427c92
+$warning         =  #cdb933
+
+
+// Color class
+.white
+  color white
+.blue 
+  color $blue
+.red 
+  color $red
+.green 
+  color $green
+.yellow 
+  color $yellow
+
+
+// Js class
+.jsHidden 
+  display none
+.jsVisible     
+  display block
+.jsContFlex.jsDisplayFlex
+  display flex !important
+.jsContFlex 
+  display none !important
+.jsTabDash
+.jsTab
+  cursor pointer
+.jsCont
+.jsContDash 
+  display none
+.jsCont.jsActive 
+.jsContDash.jsActive 
+  display block
+.jsNone
+  display none
+.jsToggle.jsActive
+  .jsFade
+    display block
+  
+
+// Bx controls
+.bx-Next
+.bx-Prev
+.slick-next
+.slick-prev
+  a 
+    width 100%
+    height 100% 
+
+
+// Custom functions
+layer-skew( $h , $w , $c )
+  position: relative
+  +after('')
+    position: absolute
+    border-bottom $h solid $c
+    border-right 0px solid transparent
+    border-left $w solid transparent
+    left $w - ($w*2)
+    top -0px
+  +before('')
+    position: absolute
+    border-left $w solid $c
+    border-right 0px solid transparent
+    border-bottom $h solid transparent
+    right $w - ($w*2)
+    top -0px
+button-skew( $h , $w , $c, $hc )
+  position: relative
+  +after('')
+    position: absolute
+    border-bottom $h solid $c
+    border-right 0px solid transparent
+    border-left $w solid transparent
+    left $w - ($w*2)
+    top -0px
+  +before('')
+    position: absolute
+    border-left $w solid $c
+    border-right 0px solid transparent
+    border-bottom $h solid transparent
+    right $w - ($w*2)
+    top -0px
+  &:hover 
+    +before()
+      border-left-color $hc
+    +after()
+      border-bottom-color $hc
+decor()
+  text-decoration underline
+  &:hover 
+    text-decoration none
+trs()
+  transition ease-in-out .2s
+trs-slow()
+  transition ease-in-out .4s
+hover()
+  &:hover
+    color green
+    text-decoration: underline
+static()
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+vam($top = 0px, $margin = 0, $position = relative, $display = inline-block, $vertical-align = middle)
+  if $display
+    display $display
+  if $vertical-align
+    vertical-align $vertical-align
+  if $position
+    position $position
+  if $top 
+    top $top
+  if $margin 
+    margin $margin
+img()
+  display block
+img-width()
+  max-width 100%
+  width 100%
+  height auto
+
+  
+// Disabled input
+button:disabled
+  background-color: #cfeded
+  color #7aa6a6
+  cursor: not-allowed;
+  +after('')
+    border-bottom-color #cfeded
+  +before('')
+    border-left-color #cfeded
+  &:hover 
+    color #7aa6a6
+    background-color: #cfeded
+    +after('')
+      border-bottom-color #cfeded
+    +before('')
+      border-left-color #cfeded
+input[type='text']:read-only
+  box-shadow none !important
+  background-color : $BGreadonly
+  color      : $readonly
+  border 1px solid #d1d1d1
+  &:focus
+    // border-color $readonly !important
+    color $readonly
+input[type='button']:disabled,
+select:disabled
+  background : $BGdisabled
+  border     : 1px solid $border-disabled
+  color      : $Dcolor
+  cursor     : not-allowed
+input[type='text']:disabled,
+input[type='submit']:disabled,
+.select_disabled,
+.button_disabled
+  background : $BGdisabled
+  border     : 1px solid $border-disabled
+  color      : $Dcolor
+  cursor     : not-allowed
+.button_disabled:hover
+  background : $BGdisabled !important
+  border     : 1px solid $border-disabled !important
+  color      : $Dcolor !important
+  cursor    : not-allowed !important
+.input_error
+  border     : 1px solid $error !important
+  // box-shadow : inset 0px 0px 0px 1px $error !important
+  color      : $error !important
+.input_success 
+  border     : 1px solid $success !important
+  // box-shadow : inset 0px 0px 0px 1px $success !important
+  color      : $success !important
+  
+
+// Input reset 
+input[type='text']
+textarea
+select
+  -webkit-appearance: none;
+  border-radius $input-border-radius
+  appearance none
+input
+textarea
+  border-radius $input-border-radius
+  margin 0px 
+  border none
+  font-family $placeholderFont
+  background: $input-background
+  padding $input-padding
+  color $input-color
+  font-size $input-size
+  input-border()
+select
+  background: $input-background
+  margin 0px 
+  border none
+  font-family $placeholderFont
+  color $input-color
+  padding $input-padding
+  font-size $input-size
+  input-border()
+  
+
+// Default input
+.form__label
+  color $label-color
+  font-size $label-size
+  margin $label-margin
+.form__label
+.form__area 
+  display block
+  width 100%
+.form__input
+.form__select
+  display block
+  width 100%
+  height $input-height
+  margin $input-margin
+  input-border()
+.form__area
+  margin $input-margin
+.dash__label
+  color white
+  font-size $label-size
+  margin $label-margin
+  display block
+.dash__input
+  display block
+  width 100%
+  height $input-height
+  margin $input-margin
+  border 1px solid border-grey
+  background #232323
+  color grey
+  &:focus
+    border-color white
+    color white
+.form__link 
+  font-size 12px
+  display: block 
+  line-height 20px 
+  margin 0px !important
+// .form__tooltip
+//   display: block
+//   color grey
+//   font-size 12px
+//   line-height 20px
+//   margin 8px 0 0 0
+  
+    
+// Custom checkbox
+customCheckbox(customCheckbox = false)
+  if customCheckbox
+    input[type='checkbox']
+    input[type='radio']
+      display none
+    .label__checkbox
+    .label__radio
+      margin 8px 0 0 0 
+      color black
+      font-size 14px 
+      display flex
+      line-height 20px
+      cursor pointer
+    // Radio
+    .label__radio i 
+      width 19px
+      height @width
+      background: white
+      border-radius (50%)
+      display inline-block
+      position relative
+      cursor pointer
+      border 1px solid white
+      +after('')
+        trs()
+        width 5px 
+        height @width
+        background: black
+        display: block
+        margin 6px
+        border-radius (50%)
+        display: none
+    // Checkbox
+    .label__checkbox i 
+      width 19px 
+      height @width
+      display inline-block
+      position relative
+      border-radius (0px)
+      background: white
+      border 1px solid $dash-border
+      cursor pointer
+      margin-right 10px
+      +after('')
+        margin-top 5px 
+        margin-left 4px
+        display none
+    .label__checkbox  
+      &:hover i 
+        border-color $dark-aqua
+        trs()
+    // Custom checkbox
+    .label__checkbox .input__checkbox:checked + i
+      background: $soft-aqua
+      border-color $soft-aqua
+      +after()
+        display: block
+        trs()
+     // Custom radio   
+    .label__radio .input__radio:checked + i
+      background: $yellow
+      border-color black
+      +after()
+        display: block
+        trs()
+    
+
+// Pay radio button
+paybuttons(paybuttons = false)
+  if paybuttons
+    .payment__radio:checked + i 
+      +before()
+        background transparent
+        trs()
+    .pay-1
+      +after('')
+        // retinaSprite($sprite_picon_group)
+        // sprite($sprite-picon-1)
+        display block
+    .pay-2
+      +after('')
+        // retinaSprite($sprite_picon_2_group)
+        // sprite($sprite-picon-2)
+        display block
+    .pay-3
+      +after('')
+        // retinaSprite($sprite_picon_3_group)
+        // sprite($sprite-picon-3)
+        display block
+    .pay-4
+      +after('')
+        // retinaSprite($sprite_picon_4_group)
+        // sprite($sprite-picon-4)
+        display block
+    .pay-5
+      +after('')
+        // retinaSprite($sprite_picon_5_group)
+        // sprite($sprite-picon-4)
+        display block
+    .payment__label
+      margin 0 15px 0 0
+      i 
+        cursor pointer
+        display block
+        position relative
+        +before('')
+          trs()
+          width 100%
+          height 100%
+          background: rgba(35, 35, 35, 0.68);
+          position absolute 
+          top 0px 
+          left 0px
+  
+
+// Placeholder color
+::-webkit-input-placeholder {color:$place-holder-default;}
+::-moz-placeholder          {color:$place-holder-default;}/* Firefox 19+ */
+:-moz-placeholder           {color:$place-holder-default;}/* Firefox 18- */
+:-ms-input-placeholder      {color:$place-holder-default;}
+  
+
+// Buttons
+button 
+  border none 
+  vertical-align middle
+  cursor pointer 
+  border none
+  outline none
+  background transparent
+.button
+  white-space: nowrap;
+  background-color $button-background
+  border-radius $button-radius
+  height $button-height
+  line-height $button-height
+  padding $button-padding
+  display inline-block
+  font-size $button-size
+  text-align: center
+  cursor pointer
+  color $button-color
+  // border 1px solid $button-border
+  -webkit-appearance: none;
+  text-decoration none
+  text-transform $button-text-transform
+  &:hover 
+    background-color $button-background-hover-color
+    color $button-hover-color
+    border-color $button-border-hover-color
+.button_xl
+  width $button-xl-width
+  height $button-xl-height
+  line-height $button-xl-height
+  font-size $button-xl-font-size
+  font-weight $button-xl-font-weight
+.button_xs
+  width $button-xs-width
+  height $button-xs-height
+  line-height $button-xs-height
+  font-size $button-xs-font-size
+  font-weight $button-xs-font-weight
+.button_white
+  // border-color white
+  background-color white
+  border-color $brown
+.button_red 
+  // border-color $red 
+  background: $red
+  // color $red
+.button_green 
+  // border-color $green
+  background: $green
+  // color $green
+.button_blue 
+  border-color $blue
+  background: $blue
+  color white
+.button_yellow 
+  // border-color $yellow 
+  background: $yellow 
+  // color $yellow
+.button_orange 
+  // border-color $orange
+  background: $orange
+  // color $orange
+.button_grey
+  // border-color $grey 
+  background: $grey 
+  // color $dark
+.button_transparent
+  border 1px solid $grey
+  background: transparent
+  &:hover 
+    border-color $brown
+    background: $brown
+
+
+// Bordered
+bordered( $color = $brown, $size = 14px, $color2 = $brown)
+  if $size
+    font-size $size
+  if $color2
+    color $color2
+  bold()
+  position: relative
+  text-transform: uppercase
+  +after('')
+    width 20px 
+    height 2px 
+    if $color
+      background: $color
+    display block
+    margin 2px 0 0 0
+    trs()
+  &:hover 
+    color $brown
+    trs()
+    &:after 
+      width 100% 
+      background: $brown
+      trs()
+      
+
+bordered-center( $color = black, $size = 14px, $color2 = black)
+  if $size
+    font-size $size
+  if $color2
+    color $color2
+  bold()
+  position relative
+  text-transform uppercase
+  +before('')
+    position absolute
+    width 100%
+    height 2px
+    bottom -2px
+    left 0
+    background-color #000
+    visibility hidden
+    -webkit-transform scaleX(0)
+    transform scaleX(0)
+    -webkit-transition all 0.3s ease-in-out 0s
+    transition all 0.3s ease-in-out 0s
+    if $color
+      background $color
+    display block
+    margin 2px 0 0 0
+    trs()
+  &:hover 
+    color $brown
+    trs()
+    +before()
+      visibility: visible
+      -webkit-transform scaleX(1)
+      transform scaleX(1)
+      background $brown
+      trs()
+
+
+// col 
+for i in (1..100)
+  .col__{i}
+    width (i)%
+    position: relative
+.col_margin
+  margin-right $col-margin
+.col_margin-20
+  margin-right 20px
+.col_margin-30
+  margin-right 30px
+  
+
+// Typography 
+for i in (12..36)
+  .str{i}
+    font-size (i)px
+
+
+// Alignment
+.ta-center
+  text-align: center
+.ta-left
+  text-align: left
+.ta-right
+  text-align: right
+
+
+// H heading 
+h1 
+  font-size $h1
+  color $h-color
+h2 
+  font-size $h2
+  color $h-color
+h3 
+  font-size $h3
+  color $h-color
+h4 
+  font-size $h4
+  color $h-color
+h5 
+  font-size $h5
+  color $h-color
+h6 
+  font-size $h6
+  color $h-color
+  
+
+// Elements
+menu 
+  padding 0px
+  margin 0px
+span 
+  display inline-block
+  font-size $span-size
+  color $span-color
+a 
+  text-decoration $link-text-docoration
+  display inline-block
+  font-size $link-size
+  color $link-color
+  &:hover 
+    color $link-hover-color
+    text-decoration $link-text-docoration-hover
+h1, h2, h3, h4, h5, h6 
+  font-weight normal
+.text 
+  font-size 16px
+  line-height 23px   
+p
+  font-size $text-size
+  color $text-color  
+  padding-bottom $text-padding
+  line-height $text-line-height
+
+    
+// Banner-link
+bannerLink(bannerLink = false)
+  if bannerLink
+    .banner__link 
+      color $banner-link-color
+      font-size 14px
+      display: block
+    
+
+// Charts 
+a[href='http://www.amcharts.com/javascript-charts/']
+  display none !important
+  
+
+// Table reset 
+th 
+  font-weight normal
+  
+
+// Popup 
+.dash-popup.jsVisible
+  display flex
+  .popup__container
+    display flex
+.popup.jsVisible 
+  display block
+  .popup__container
+    display block
+.popup
+.dash-popup
+  display none
+  position fixed 
+  background: rgba(0,0,0, 0.4)
+  top 0px
+  left 0px 
+  width 100% 
+  height @width
+  flex-direction column
+  flex-wrap wrap
+  z-index 104
+
+
+// Bread
+breadCrumbs(breadCrumbs = false)
+  if breadCrumbs
+    .bread-crumbs
+      
+    
+      &__item
+        font-size 15px
+        display: inline-block
+        a 
+          color dark
+          font-size 15px
+        &:last-child
+          color grey2
+          
+      &__separator 
+        display: inline-block
+        margin 0 5px
+        color grey2
+    
+
+// Custom scrollbar
+customScrolCss(customScrolCss = false)
+  if customScrolCss
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+    .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar
+      background: $soft-aqua
+    .mCSB_scrollTools .mCSB_draggerRail
+      background-color: border;
+    .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar
+    .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar
+      background-color: #fff; 
+      background-color: hover;
+  
+
+// Acordion 
+// .acordion
+  
+
+//   &__item
+//     position relative
+//   &__link 
+//     font-size 18px
+//     color black 
+//     bold()
+//     span 
+//       +before('')
+//         sprite()
+//         vam()
+//   &__sub-item 
+//     margin 20px 0 0 0
+    
+
+// Bx slider 
+// .bx-controls
+// .bx-prev 
+//   a
+//     sprite($sprite-bx-prev-2)
+//   &:hover a
+//     sprite($sprite-bx-prev-2-hover)
+// .bx-next 
+//   a
+//     sprite($sprite-bx-next-2)
+//   &:hover a
+//     sprite($sprite-bx-next-2-hover)
+    
+
+// Bx custom pager
+// .custom__pager
+  
+
+//   .bx-prev 
+//     sprite($sprite-bx-prev)
+//   .bx-next
+//     sprite($sprite-bx-next)
+
+    
+
+// Default controls style 
+.bx-controls
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 59%;
+.bx-controls-direction 
+  width 1170px
+  margin 0 auto 
+  position: relative
+  a 
+    opacity: 0.6
+    trs()
+    &:hover 
+      opacity: 1
+      trs()
+.bx-wrapper .bx-prev
+  left: 10px;
+  /*background: url(../../images/controls.png) no-repeat 0 -32px;*/
+.bx-wrapper .bx-next
+  right: 10px;
+  /*background: url(../../images/controls.png) no-repeat -43px -32px;*/
+
+
+// Bx slider background slide selector    
+responsiveSlide(responsiveSlide = true)
+  if responsiveSlide
+    .responsiveSlide
+      background: url(../images/slider/1.jpg) center 
+      width 100%
+      height 738px
+
+
+// Ticker
+.ticker
+  width: 100%;
+  font-size: 0px;
+.example-enough-space.has-enough-space 
+  text-align: center;
+  
+
+// FAQ container
+FAQcontainer(FAQcontainer = false)
+  if FAQcontainer 
+    .section__content
+      p 
+        font-size 15px 
+        span 
+          color red
+          font-size 12px 
+          position relative
+          top -5px
+      p  a 
+        color gold
+        font-size 15px
+      p  a 
+        margin-right 3px
+      ol li
+        position: relative;
+        font-size: 15px;
+        line-height: 25px;
+        padding-left: 18px !important;
+        > ul
+          padding-left: 50px;
+        > ol 
+          margin-top 25px
+          padding-left 15px
+        > li 
+          padding-left 10px
+      ul
+        padding-left 20px
+        margin-bottom: 20px;
+        list-style-type: disc;
+        li 
+          line-height: 25px;
+          font-size: 15px;
+          padding-left: 18px !important;
+          ul
+            padding-left 17px
+            margin 0px
+            list-style circle
+      ol 
+        padding-left 18px
+        padding-bottom 15px
+        p  
+          margin 0 0 15px 0 
+          padding 0 0 10px 0
+          span 
+            color red
+            font-size 9px
+            position relative 
+            top -5px
+      .num__items_roman
+        list-style-type: lower-roman !important;
+        margin-bottom 20px
+      h1
+        font-size 32px 
+      h2
+        font-size 24px
+      h3
+        font-size 20px
+      h4
+        font-size 18px
+      h5
+        font-size 16px
+      h6
+        font-size 14px
+      h1, h2, h3, h4, h5, h6
+        color dark
+        margin 0 0 16px 0
+        padding 0px
+      .t-title 
+        font-size: 24px;
+        margin-bottom: 20px;
+        color dark
+    
+
+// Pagination
+pagination(pagination = false)
+  if pagination
+    .pagination
+      &-wrapper 
+        padding 20px 0 0 0
+      ul
+        align-items: center;
+        display flex
+      li
+        margin-right 10px
+        width 45px 
+        height 45px
+        line-height @height
+        text-align: center
+      a
+        width 45px 
+        height @width
+        border 1px solid black2
+        line-height @height
+        text-align: center
+        color black2
+        border-radius(50%)
+        &:hover 
+          border-color red
+      .active 
+        a 
+          background: red
+          border-color red 
+          color white
+      .previous_page.disabled
+        opacity 0.5
+        background: grey2
+        border-color black !important
+        a 
+          cursor default
+      .next_page.disabled
+        opacity 0.5
+        background: grey2
+        border-color black !important
+        a 
+          cursor default
+      .previous_page
+      .next_page
+        height 45px 
+        width auto
+        line-height @height
+        border 1px solid black2
+        padding 0 20px
+        text-align: center
+        align-items: center;
+        justify-content: center;
+        opacity 1
+        border-radius(30px)
+        &:hover 
+          border-color red
+        a
+          border none
+      .previous_page
+        display flex
+        margin-left auto
+        &:hover a 
+          background: none
+          border none
+        &:before 
+          content ''
+          // sprite($sprite-prev-arrow)
+          display block
+          margin 0 10px 0 0 
+      .next_page
+        margin-right 0px !important
+        display flex
+        &:hover a 
+          background: none
+          border none
+        &:after 
+          content ''
+          // sprite($sprite-next-arrow)
+          display block
+          margin 0 0px 0 10px
+          
+
+// Responsive iframe
+responsiveIframe(responsiveIframe = false)
+  if responsiveIframe
+    .iframe-rapper
+      position relative
+      padding-bottom 56.25% /* 16:9 */
+      padding-top 25px
+      height 0
+    .iframe-rapper iframe
+      position absolute
+      top 0
+      left 0
+      width 100%
+      height 100%
+    

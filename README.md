@@ -1,2 +1,1 @@
-# Nanomed
 # navatsoft

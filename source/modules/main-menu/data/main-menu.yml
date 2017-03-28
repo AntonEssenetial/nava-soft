@@ -2,40 +2,24 @@
   mainMenu:
     default:
       -
-        title: Home
-        url: home
+        title: Projects
+        url: projcts
         submenu: false
       -
-        title: Investments
-        url: investments
-        submenu: false
-      -
-        title: About
+        title: About us
         url: about
         submenu: false
-      - 
-        title: Referral program
-        url: referral-program
-        submenu: false
-      - 
-        title: Guarantees
-        url: guarantees
-        submenu: false
       -
-        title: Faq
-        url: faq
-        submenu: false
-      -
-        title: News
-        url: news 
-        submenu: false
-      -
-        title: Contacts
-        url: contacts
+        title: Blog
+        url: blog
         submenu: false
       - 
-        title: Rules 
-        url: rules
+        title: Careers
+        url: careers
+        submenu: false
+      - 
+        title: Contacts Us
+        url: contact
         submenu: false
 
     account: 

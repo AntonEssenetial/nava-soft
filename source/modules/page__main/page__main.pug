@@ -1,4 +1,26 @@
+include ../module__top/module__top
+include ../module__our-work/module__our-work
+include ../module__grid/module__grid
+include ../module__about-us/module__about-us
+include ../module__category/module__category
+include ../module__blog/module__blog
+include ../module__together/module__together
+
 mixin page__main(data)
   - var bemClass = 'page__main'
   section.page__main&attributes(attributes)
-    
+    .container
+      
+      +module__top()
+      
+      +module__our-work()
+
+      +module__grid()
+      
+      +module__about-us()
+
+      +module__category()
+
+      +module__blog()
+
+      +module__together()

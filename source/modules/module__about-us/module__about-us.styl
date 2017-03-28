@@ -1,0 +1,78 @@
+.module__about-us
+  background: url('../images/background/2.jpg') no-repeat center;
+  background-size cover
+  position: relative
+  text-align: center
+  display flex 
+  flex-direction column
+  overflow hidden
+  +before('')
+    background: rgba(0, 47, 109, 0.9);
+    width 100%
+    height 100% 
+    top 0px 
+    left 0px
+    position: absolute
+    z-index: 0
+    trs()
+    
+  &__content 
+    margin auto 
+    z-index 1
+    position: relative
+    
+  h2 
+    font-size 52px
+    black()
+    opacity: 0
+    color white
+    span 
+      font-size 52px 
+      black()
+      opacity 0
+      
+  &__str-2
+    opacity 0
+    bold()
+    font-size 30px
+    color white
+    text-transform: uppercase
+    max-width 670px
+    margin 50px 0 55px 0
+      
+  &__str 
+    opacity 0
+    text-transform: uppercase
+    black()
+    color white
+    font-size 24px
+    +after('')
+      width 50px 
+      height 2px 
+      display: block
+      margin 40px auto
+      background-color: white
+      animation-duration: 1s;
+      animation-delay: .5s;
+      animation-fill-mode: both;
+      animation-name zoomIn
+      
+  &__item 
+    max-width 997px
+    margin 0 auto
+    
+.module__about-us.jsWhite 
+  +before()
+    background: rgba(0, 0, 0, 0.82);
+    trs()
+  
+  h2,
+  h2 span,
+  .module__about-us__str 
+    color white 
+    
+  .module__about-us__str
+    +after()
+      background-color: white
+  
+    

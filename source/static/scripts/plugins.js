@@ -57,6 +57,11 @@
 //= require tabs/tabs.js
 
 
+// Slick
+// ---------------------------------------------------------------------------
+//= require slick/slick.min.js
+
+
 // From styler
 // ---------------------------------------------------------------------------
 //= require formstyler/jquery.formstyler.min.js

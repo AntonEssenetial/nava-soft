@@ -1,2 +1,22 @@
 .main-menu
-  //
+  position: relative 
+  top 3px
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeIn
+  animation-delay: .5s
+  
+  &__link
+    margin 0 30px
+    bordered-center($grey, 21px, $dark)
+    padding 0 0 5px 0
+    black()
+    &:last-child 
+      margin-right 0px
+    
+  &__item_active &__link
+    color $dark
+    +before('')
+      transform scaleX(1)
+      visibility visible
+      background: $dark

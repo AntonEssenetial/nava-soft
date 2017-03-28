@@ -2,9 +2,9 @@
 zozo(false)
 sprites(false)
 royal-slider(false)
-animate-css(false)
+animate-css(true)
 bxslider(false)
-slick(false)
+slick(true)
 customScrollbar(false)
 simpleLightBox(false)
 formstyler(false)
@@ -33,34 +33,43 @@ $IMG-PATH = '../images/background/'
 //   background-image image-url('logo.png')
 
 // And the font-url
-$FONT-PATH = '../fonts/lato/'
-font-face('Lato-Bold', 'Lato-Bold', 'normal', 'normal')
-font-face('Lato-Regular', 'Lato-Regular', 'normal', 'normal')
-font-face('Lato-Light', 'Lato-Light', 'normal', 'normal')
-font-face('Lato-LightItalic', 'Lato-LightItalic', 'normal', 'normal')
+$FONT-PATH = '../fonts/roboto/'
+font-face('roboto-regular-webfont', 'roboto-regular-webfont', 'normal', 'normal')
+font-face('roboto-medium-webfont', 'roboto-medium-webfont', 'normal', 'normal')
+font-face('roboto-black-webfont', 'roboto-black-webfont', 'normal', 'normal')
+font-face('roboto-bold-webfont', 'roboto-bold-webfont', 'normal', 'normal')
+font-face('roboto-bolditalic-webfont', 'roboto-bolditalic-webfont', 'normal', 'normal')
+font-face('roboto-thin-webfont', 'roboto-thin-webfont', 'normal', 'normal')
+font-face('roboto-thinitalic-webfont', 'roboto-thinitalic-webfont', 'normal', 'normal')
+medium()
+  font-family 'roboto-medium-webfont'
+regular()
+  font-family 'roboto-regular-webfont'
+black()
+  font-family 'roboto-black-webfont'
 bold()
-  font-family 'Lato-Bold'
-reg()
-  font-family 'Lato-Regular'
+  font-family 'roboto-bold-webfont'
+bold-italic()
+  font-family 'roboto-bolditalic-webfont'
 light()
-  font-family 'Lato-Light'
-italic()
-  font-family 'Lato-Lightitalic'
+  font-family 'roboto-thin-webfont'
+light-italic()
+  font-family 'roboto-thinitalic-webfont'
   
 // Bdoy font 
-$body-font = 'Lato-Regular'
+$body-font = 'roboto-regular-webfont'
 
 
 // Container-width 
-$container-width = 1240px
-$container-padding = 0 20px
+$container-width = 100%
+$container-padding = 0 105px
 
 
 // Link - var
 $link-size = 14px
 $link-color = black
-$link-hover-color = $soft-aqua
-$link-text-docoration = underline
+$link-hover-color = $dark
+$link-text-docoration = none
 $link-text-docoration-hover = none
 
 
@@ -78,7 +87,7 @@ $span-color = $dark
 
 // Heading - sive 
 $h1 = 50px
-$h2 = 36px
+$h2 = 72px
 $h3 = 16px
 $h4 = 24px
 $h5 = 20px
@@ -116,14 +125,14 @@ $banner-link-color = $dark
 
 // Buttons
 $button-radius = 0px
-$button-height = 46px
-$button-padding = 0 25px
-$button-size = 14px
+$button-height = 71px
+$button-padding = 0 45px
+$button-size = 21px
 $button-text-transform = uppercase
-$button-color = $dark-aqua
-$button-border = $aqua
-$button-background = $aqua
-$button-hover-color = $dark-aqua
+$button-color = white
+$button-border = white
+$button-background = transparent
+$button-hover-color = $dark
 $button-border-hover-color = $button-hover
 $button-background-hover-color = $button-hover
 // Button xl
@@ -172,9 +181,9 @@ $placeholderFont = 'Lato-Light';
 
 // Native - Colors
 $brown         =  #e0914c
-$dark          =  #3d3d3d
+$dark          =  #1c1d1d
 $yellow        =  #f5aa00
-$blue          =  #2763b0
+$blue          =  #002f6d
 $aqua          =  #61dfdd
 $dark-aqua     =  #025958
 $soft-aqua     =  #518fa6
@@ -185,8 +194,8 @@ $pink          =  pink
 $red           =  #be000d
 $milk          =  #e5e1d0
 $gold          =  #d09700
-$soft          =  #f1f0ed
-$grey          =  #a6a6a6
+$soft          =  #f7f7f7
+$grey          =  #8b8b8b
 $grey2         =  #646669
 $grey3         =  #6f6f6f
 
@@ -197,7 +206,7 @@ $dash-border   =  #ececec
 
 
 $hover         =  $gold
-$button-hover  =  #48cecc
+$button-hover  =  white
 
 
 // Input colors - readonly - disabled - succes - error
@@ -610,11 +619,14 @@ button
   text-align: center
   cursor pointer
   color $button-color
-  // border 1px solid $button-border
+  border 2px solid $button-border
   -webkit-appearance: none;
   text-decoration none
   text-transform $button-text-transform
+  trs()
+  bold()
   &:hover 
+    trs()
     background-color $button-background-hover-color
     color $button-hover-color
     border-color $button-border-hover-color
@@ -632,8 +644,8 @@ button
   font-weight $button-xs-font-weight
 .button_white
   // border-color white
-  background-color white
-  border-color $brown
+  background-color transparent
+  border-color white
 .button_red 
   // border-color $red 
   background: $red
@@ -667,37 +679,13 @@ button
 
 
 // Bordered
-bordered( $color = $brown, $size = 14px, $color2 = $brown)
+bordered-center( $color = $grey, $size = 21px, $color2 = $dark)
   if $size
     font-size $size
   if $color2
     color $color2
-  bold()
-  position: relative
-  text-transform: uppercase
-  +after('')
-    width 20px 
-    height 2px 
-    if $color
-      background: $color
-    display block
-    margin 2px 0 0 0
-    trs()
-  &:hover 
-    color $brown
-    trs()
-    &:after 
-      width 100% 
-      background: $brown
-      trs()
-      
-
-bordered-center( $color = black, $size = 14px, $color2 = black)
-  if $size
-    font-size $size
-  if $color2
-    color $color2
-  bold()
+  if $color 
+    color $color
   position relative
   text-transform uppercase
   +before('')
@@ -706,7 +694,6 @@ bordered-center( $color = black, $size = 14px, $color2 = black)
     height 2px
     bottom -2px
     left 0
-    background-color #000
     visibility hidden
     -webkit-transform scaleX(0)
     transform scaleX(0)
@@ -718,13 +705,13 @@ bordered-center( $color = black, $size = 14px, $color2 = black)
     margin 2px 0 0 0
     trs()
   &:hover 
-    color $brown
+    color $color2
     trs()
     +before()
       visibility: visible
       -webkit-transform scaleX(1)
       transform scaleX(1)
-      background $brown
+      background $color2
       trs()
 
 

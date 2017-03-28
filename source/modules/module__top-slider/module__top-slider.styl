@@ -1,0 +1,135 @@
+.module__top-slider
+  height 100%
+  display flex 
+  flex-direction column
+  
+  h2
+    color white
+    line-height 90px
+    trs()
+    display: none
+    
+  &__slide
+    height 100%
+    display flex !important 
+    flex-direction column
+    width 100%
+
+    +before('')
+      background: rgba(0, 47, 109, 0.9);
+      width 100%
+      height 100% 
+      top 0px 
+      left 0px
+      position: absolute
+      z-index: 0
+      trs()
+  
+  &__slide 
+    margin auto
+    
+  &__str 
+    text-transform: uppercase
+    black()
+    color white
+    font-size 24px
+    display none
+    +after('')
+      width 50px 
+      height 2px 
+      display: block
+      margin 40px auto
+      background: white
+      animation-duration: 1s;
+      animation-delay: .5s;
+      animation-fill-mode: both;
+      animation-name zoomIn
+      
+  &__slide__item 
+    z-index 1
+    position: relative
+    background-size cover
+    margin auto
+         
+.jsWhite 
+  
+  h2 
+    color $dark
+    trs()
+    
+  .slick-dots button
+    color $dark
+    trs()
+    +after()
+      background: $dark
+      trs()
+    
+.slick-active
+  h2
+  .module__top-slider__str
+    display block
+    
+.slick-dots
+  z-index 2
+  display flex
+  bottom 190px
+  justify-content: center;
+  position: absolute
+  width 100%
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  animation-name fadeInUp
+  button 
+    color white
+    font-size 24px 
+    black()
+    margin 0 30px
+    opacity: 0.5
+    position: relative
+    +before('0')
+      font-size 24px
+    +after('')
+      width 48px 
+      height 2px 
+      transform scale(0) 
+      background: white
+      display: block
+      position absolute
+      bottom 17px
+      left -4px
+      trs()
+  
+.slick-list
+.slick-track 
+  height 100%
+  
+li.slick-active
+  button 
+    opacity 1
+    +after()
+      transform scale(1) 
+      trs()
+      
+.icon_arrow 
+  width 33px
+  color white
+  cursor pointer 
+  &:hover 
+    opacity 0.5
+    trs()
+    
+.slick-prev
+.slick-next 
+  position absolute
+  z-index 1
+  top 47%
+  
+.slick-next
+  left 0px
+  padding-left 100px
+
+.slick-prev
+  transform rotateZ(180deg)
+  right 0px
+  padding-left 100px

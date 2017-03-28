@@ -1,4 +1,10 @@
+include ../main-menu/main-menu
+
 mixin header(data)
   - var bemClass = 'header'
   .header&attributes(attributes)
-    
+    .container
+      div(class=bemClass + '__row').row.center.between
+        a(class=bemClass + '__logo' href='home.html') Navatsoft 
+        
+        +main-menu(mainMenu.default)

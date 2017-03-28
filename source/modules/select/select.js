@@ -1,10 +1,5 @@
 // custom select
-(function() {
+//(function() {
 
-    $('select').styler();
-    $('.jq-selectbox__dropdown ul').mCustomScrollbar({
-        scrollInertia:100,
-        autoExpandScrollbar: true
-    });
 
-})();
+//})();

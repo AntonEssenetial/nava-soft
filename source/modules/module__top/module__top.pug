@@ -1,0 +1,11 @@
+include ../module__top-slider/module__top-slider
+
+mixin module__top(data)
+  - var bemClass = 'module__top'
+  section.module__top.jsHeight.jsBg&attributes(attributes)
+    div(class=bemClass + '__content') 
+      
+      +module__top-slider()
+    
+    div(class=bemClass + '__scroll') 
+      span(class=bemClass + '__str-2').jsScroll Scroll

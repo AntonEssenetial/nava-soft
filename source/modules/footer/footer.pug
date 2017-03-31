@@ -3,3 +3,11 @@ include ../footer-nav/footer-nav
 mixin footer(data)
   - var bemClass = 'footer'
   footer.footer&attributes(attributes)
+    .container
+      div(class=bemClass + '__row').row.center.between
+        span © 2017 Navat Soft. All Rights Reserved.
+        .row
+          a(href="mailto:hello@navatsoft.com") hello@navatsoft.com
+          span.footer__separator /   
+          a(href="tel:8014672207") 801 467 2207
+

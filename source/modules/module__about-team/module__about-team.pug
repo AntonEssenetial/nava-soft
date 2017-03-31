@@ -1,0 +1,18 @@
+mixin module__about-team(data)
+  - var bemClass = 'module__about-team'
+  section.module__about-team&attributes(attributes)
+    div(class=bemClass + '__content') 
+      div(class=bemClass + '__heading') 
+        span(class=bemClass + '__str').jsAnim.str_black Team
+        h2.jsAnim  The only difference is we get to
+          span We the bestskiing, cycling, and outdoorvistas found.
+      div(class=bemClass + '__post').jsAnim
+    div(class=bemClass + '__items').row.wrap
+      -for (var y = 0 ; y < 3 ; y++)
+        -for (var x = 1 ; x < 5 ; x++)
+          div(class=bemClass + '__item').col__25.jsAnim 
+            img(src=config.path.images + '/team/' + x +'.jpg', alt="", class=bemClass + '__img') 
+            div(class=bemClass + '__layer')
+              div(class=bemClass + '__layer__content').animated.fadeInUp
+                span(class=bemClass + '__name') Andrey Baranovsky 
+                span(class=bemClass + '__prof') Developer

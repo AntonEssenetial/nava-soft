@@ -1,6 +1,210 @@
 // Media queries, example +width-range(10em, 20em)
-// +width-max($container-width)
- 
++width-max(1900px)
+  .module__about-team__content,
+  .module__about-nava
+    padding 70px
+  .page__wrapper 
+    width 100%
+    min-width 320px
+  .container
+    padding 0 70px
+  .header__logo, 
+  .main-menu__link,
+  .footer__row a, 
+  .footer__row span
+    font-size 14px
+  .header__row 
+    height 70px
+  .footer
+    padding 25px 0
+  h2 
+    font-size 48px
+  .module__about-us h2,
+  .module__our-work h2,
+  .module__our-work h2 span,
+  .module__about-team h2,
+  .module__about-team h2 span
+    font-size 35px
+  .module__top-slider h2,
+  .module__about-top h2,
+  .h2_black
+    font-size 48px
+    line-height 60px
+  .module__top-slider__str,
+  .slick-dots button,
+  .slick-dots button:before,
+  .module__top__str-2,
+  .module__about-us__str-2,
+  .module__our-work__str,
+  .module__about-us__str,
+  .module__about-top__str,
+  .module__about-top__str-2,
+  .module__about-nava__str,
+  .module__about-fucts__str,
+  .module__about-fucts__items span,
+  .str_black,
+  .module__about-team__name
+    font-size 16px
+  .str_black::after
+  .module__about-fucts__items span::before
+  .module__about-fucts__str::after
+  .module__about-nava__str::after
+  .module__top-slider__str::after
+  .module__about-us__str::after
+  .module__our-work__str::after
+  .module__about-top__str::after
+    margin 32px auto
+    width 33px
+  .module__about-nava__post p
+  .module__about-nava__post span
+    font-size 14px
+    line-height 27px
+  .module__about-nava__post p
+    padding 0 0 40px 0
+  .module__about-nava__post
+    column-gap 130px
+    margin-top 50px
+  .module__about-fucts__items p
+    font-size 72px
+  .module__about-nava__post h2
+  .module__about-nava__post h3
+  .module__about-nava__post h4
+  .module__about-nava__post h5
+    font-size 14px
+    margin 0 0 20px 0
+  .current, 
+  .total
+    font-size 16px
+    &:before
+      font-size @font-size
+  .current 
+    &:after 
+      font-size 16px
+  .module__about-slider__nav
+    height 70px
+    max-width 461px
+  .slick-dots button:after 
+    top 11px
+    left -1px
+    width 31px
+  .module__top__str-2::after
+    height: 32px;
+    margin: 28px auto 0 auto;
+  .button 
+    font-size 14px
+    height 47px 
+    line-height @height - 3px
+    padding 0 38px
+  .module__category h2,
+  .module__grid__cat,
+  .module__together span
+    font-size 16px
+  .module__category
+    padding 135px 0
+  .module__category::after
+    font-size 140px
+    left: 52%;
+  .module__grid__name
+    font-size 38px
+    line-height 50px
+  .module__grid__cat::after
+    margin 26px 0 22px
+    width: 38px;
+  .module__blog__link,
+  .module__blog__more,
+  .module__blog__date,
+  .module__blog__twitter p,
+  .module__blog__twitter span
+    font-size 14px
+    line-height 25px
+  .module__blog__item_absolute,
+  .module__blog__twitter
+    padding 50px
+  .module__blog__item_padding
+    padding 50px 50px 0 50px
+  .module__blog__link,
+  .module__blog__twitter p
+    margin 28px 0
+    height auto
+  .module__blog__all 
+    padding: 26px 0;
+    a
+      font-size 14px
+  .module__together h2
+    font-size 67px
+    line-height 80px
+    margin-bottom: 65px;
+  .module__together
+    padding 230px 0
+  .module__blog__item_absolute
+    padding-bottom 20px
+  .module__blog__twitter a
+  .module__about-team__prof
+    font-size 14px
+  .module__about-team__layer
+    padding 70px
+  
+
++width-max(1430px)
+  .module__blog__link, 
+  .module__blog__twitter p
+    height 70px
+    
+
++width-max(1240px)
+  .module__blog__item_absolute, 
+  .module__blog__twitter,
+  .module__blog__item_padding
+    padding 20px
+      
+
++width-max(1100px)
+  .module__blog__row,
+  .module__grid__row
+    flex-direction column
+    > .col__50, 
+    .module__grid__column
+      width 100%
+  .module__about-us__item,
+  .module__our-work__item
+    max-width 100% 
+  .module__blog__link, 
+  .module__blog__twitter p
+    height auto
+  .slick-prev, 
+  .slick-next
+    display: none !important
+  h2,
+  .module__about-us__str-2
+    padding 0 20px
+  .module__category
+    padding 90px 0
+  .module__category::after
+    top 8.6%
+    left: 55%;
+  .module__grid__cat,
+  .module__grid__name
+    display: block
+  .module__grid__name
+    font-size 30px
+    line-height 40px
+  .module__grid__layer
+    opacity: 1
+    background: rgba(25, 25, 25, 0.67);
+    padding 20px
+  .module__grid__item_blue
+    padding 20px
+  .module__grid__cat::after
+    margin 16px 0 10px 0
+  .module__about-team__layer
+    padding 20px
+  .module__about-nava__post
+    column-count 1
+    span 
+      margin 0 0 40px 0
+  .module__about-nava__post span::before
+    margin 0 20px 0px 0
+    
 
 // iPadi pro 
 // +width-max(1366px)
@@ -11,16 +215,179 @@
 
 
 // iPad mini
-// +width-max(768px)
++width-max(768px)
+  .module__top-slider h2, 
+  .module__about-top h2, 
+  .h2_black
+  h2
+    font-size: 38px;
+    line-height: 49px;
+  .module__about-team__content,
+  .module__about-fucts
+    padding 30px 20px
+  .module__about-team__content
+  .module__about-nava
+    padding-left 0px 
+    padding-right 0px
+  .module__about-nava__post
+    padding 0 20px
+  .container
+    padding 0px
+  .header__row
+    padding 0 20px
+  .footer 
+    padding-left 20px 
+    padding-right 20px
+  .module__top__scroll
+  .module__about-top__scroll
+    display: none
+  .slick-dots
+    bottom 20px
+    padding 0 20px
+    button 
+      margin 0 18px
+  .module__our-work,
+  .module__about-us
+    padding 30px 0
+  .slick-next-2
+  .slick-prev-2
+    display: none
 
+
++width-max(660px)
+  .module__about-slider__nav
+    width 100%
+    padding 0 20px
+  .module__about-team__item
+    width 50%
+  .module__about-fucts__item
+    width 50%
+  .module__about-fucts__items
+    flex-wrap wrap
+  .main-menu,
+  .footer__row > span,
+  .module__blog__img 
+    display: none
+  .footer__row
+    justify-content: center;
+  .module__together h2
+    font-size 46px 
+    line-height 60px
+  .module__blog__item__content,
+  .module__blog__item
+    width 100%
+  .module__blog__link, 
+  .module__blog__twitter p
+    margin 20px 0
+    padding 0px
+  .module__blog__row
+  .module__blog__row .row
+    flex-direction column
+    background: white
+    .col__50 
+      width 100%
+  .module__blog__item_absolute
+    position: relative
+  .module__blog__item
+    margin-bottom 20px
+    height auto
+  .module__blog__item__content
+    background: white
+  .sandwitch 
+    display: block
+  .main-menu__item_active a 
+    color white !important
+    +before()
+      background: white !important
+  .main-menu.active
+    animation-duration: .3s;
+    animation-delay: 0s;
+    display: flex
+    position absolute
+    top 70px 
+    background: $dark
+    z-index: 111
+    width 100%
+    left 0px
+    text-align: center
+    ul 
+      top: -30px;
+      position: relative;
+      margin auto
+    .row 
+      flex-direction column
+    a 
+      margin 4px 0
+      font-size 30px
+      &:hover 
+        color white
+  .header 
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    z-index: 11;
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2)
+  .page__wrapper
+    margin-top: 70px;
+  
+    
 
 // iPohne 6+
 // +width-max(414px)
+
++width-max(413px)
+  .module__top-slider h2, 
+  .module__about-top h2, 
+  .h2_black, 
+  h2
+    font-size: 33px;
+    line-height: 44px;
 
 
 // iPhone 6
 // +width-max(375px)
 
 
++width-max(370px)
+  .module__about-team__item
+    width 100%
+  .module__about-us h2,
+  .module__our-work h2,
+  .module__our-work h2 span
+    font-size 30px
+  .module__top-slider h2
+    font-size 30px
+    line-height 40px
+  h2 
+    font-size 30px
+    line-height 40px
+  .module__about-us__str-2
+    margin 30px 0
+  .slick-dots button
+    margin 0 12px
+  .module__together
+    padding 100px 0
+  .module__together h2
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom 30px
+  .footer__row a, 
+  .footer__row span
+    font-size 11px
+  .module__grid__name
+    font-size: 22px;
+    line-height: 31px;
+
+
 // iPhone 4 5 and 4s 5S
 // +width-max(320px)
+
+
+@media only screen and (max-device-width : 1024px) and (orientation : landscape)
+  .slick-dots
+    bottom 160px
+@media only screen and (max-device-width : 736px) and (orientation : landscape)
+  .slick-dots
+    display: none

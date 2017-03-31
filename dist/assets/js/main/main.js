@@ -7,6 +7,48 @@ $(function() {
 });
   
 // Modules
+// module__about-slider
+(function() {
+
+    // about slick slider
+    var $aboutSlider = $('.jsAboutSlider');
+    var slideCount = null;
+
+    $( document ).ready(function(){
+        $aboutSlider.slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+            //fade: true,
+            nextArrow: '.slick-next-1',
+            prevArrow: '.slick-prev-1'
+        });
+    });
+
+    $aboutSlider.on('init', function(event, slick){
+        slideCount = slick.slideCount;
+        setSlideCount();
+        setCurrentSlideNumber(slick.currentSlide);
+    });
+    
+    $aboutSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        setCurrentSlideNumber(nextSlide);
+    });
+    
+    function setSlideCount() {
+        var $el = $('.slide-count-wrap').find('.total');
+        $el.text(slideCount);
+    }
+    
+    function setCurrentSlideNumber(currentSlide) {
+        var $el = $('.slide-count-wrap').find('.current');
+        $el.text(currentSlide + 1);
+    }
+
+})();
+
 // module__grid
 (function() {
 
@@ -45,9 +87,13 @@ $(function() {
 
     // height detect function
     function heightDetect2(){
-        $('.jsHeight2').css( 
-            'height', $(window).height()
-        );
+        if ($(window).width() >= 768){
+            $('.jsHeight2').css( 
+                'height', $(window).height()
+            );
+        } else if ($(window).width() <= 768) {
+            $('.jsHeight2').css('height', 'auto');
+        } 
     };
 
     $(window).on('load resize', heightDetect2);
@@ -83,33 +129,8 @@ $(function() {
 
 })();
 
-// // module__top-slider
-// (function() {
-
-// 	// Your code here
-
-// })();
-
-// module__top
+// module__top-slider
 (function() {
-
-    // height detect function
-    function heightDetect(){
-        $('.jsHeight').css( 
-            'height', (parseInt($(window).height())-105) + "px"
-        );
-    };
-
-    $(window).on('load resize', heightDetect);
-
-
-    // hover function
-    $(".jsHover").hover(function(){
-        $(this).closest('.jsBg').addClass('jsWhite');
-    }, function(){
-        $(this).closest('.jsBg').removeClass('jsWhite')
-    });
-
 
     // slick slider 
     var slider1 = $('.jsSlick')
@@ -122,6 +143,34 @@ $(function() {
         fade: true,
         nextArrow: '.slick-prev',
         prevArrow: '.slick-next'
+    });
+
+})();
+
+// module__top
+(function() {
+
+    // height detect function
+    function heightDetect(){
+        if ($(window).width() <= 1900){
+            $('.jsHeight').css( 
+                'height', (parseInt($(window).height())-70) + "px"
+            );
+        } else {
+            $('.jsHeight').css( 
+                'height', (parseInt($(window).height())-105) + "px"
+            );
+        }
+    }
+
+    $(window).on('load resize', heightDetect);
+
+
+    // hover function
+    $(".jsHover").hover(function(){
+        $(this).closest('.jsBg').addClass('jsWhite');
+    }, function(){
+        $(this).closest('.jsBg').removeClass('jsWhite')
     });
 
 
@@ -144,7 +193,20 @@ $(function() {
         $(this).toggleClass('active');
         menu.toggleClass('active');
         $('body').toggleClass('page_mobile-menu');
+        menuHeightDetect();
     });
+
+    function menuHeightDetect() {
+        if ($(window).width() <= 660){
+            $('.main-menu').css(
+                'height', $(window).height()
+            );
+        } else {
+            $(".main-menu").css('height', 'auto');
+        }
+    }
+
+    $(window).on('load resize', menuHeightDetect);
 
 })();
 

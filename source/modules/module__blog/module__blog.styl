@@ -1,2 +1,94 @@
 .module__blog
-  //
+
+  &__img 
+    display: block 
+    width 100%
+    
+  &__item 
+    background: $soft
+    padding 73px
+    height 50%
+    
+  &__item_padding
+    padding-bottom 0px
+    
+  &__item_absolute 
+    position: absolute
+    width  50% 
+    right 0px 
+    bottom 0px
+    padding-bottom 0px
+    
+  &__item__content
+    background: $dark
+    
+  &__date
+  &__more 
+    font-size 21px 
+    black()
+    color #838383
+    text-transform: uppercase
+    
+  &__link 
+    font-size 21px 
+    black()
+    color $dark
+    text-transform: uppercase
+    margin 45px 0
+    line-height 38px
+    height: 106px;
+    overflow: hidden;
+    display: block
+    
+  &__more 
+    position: relative
+    +after('')
+      left -130px
+      top 50%
+      height 2px 
+      width 100px 
+      background: $dark
+      display block
+      position absolute
+      transform scale(0)
+      trs()
+    &:hover:after
+      transform scale(1)
+      trs()
+    
+  &__twitter 
+    background: $blue
+    padding 73px 90px
+    height 50%
+    
+    p 
+      color white 
+      black()
+      font-size 21px
+      text-transform: uppercase
+      line-height 38px
+      margin 45px 0
+      height: 106px;
+      overflow: hidden;
+      
+    a 
+      color #a5b0c3
+      black()
+      font-size 21px 
+      text-transform: uppercase
+      
+  &__all
+    padding 39px 0
+    a
+      text-transform: uppercase
+      font-size 21px 
+      black()
+      color $grey
+      &:hover 
+        color $dark
+      
+    
+.icon_twitter
+  color white
+  width 30px
+  height 25px

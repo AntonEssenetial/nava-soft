@@ -1,4 +1,7 @@
 mixin module__together(data)
   - var bemClass = 'module__together'
-  section.module__together&attributes(attributes)
-    
+  section.module__together.jsBg&attributes(attributes)
+    div(class=bemClass + '__content') 
+      div(class=bemClass + '__item') 
+        h2.jsHover.jsAnim Let's work<br>together
+        span Ready to get started

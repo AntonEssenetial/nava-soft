@@ -1,0 +1,11 @@
+mixin module__about-top(data)
+  - var bemClass = 'module__about-top'
+  section.module__about-top.jsHeight.jsBg&attributes(attributes)
+    div(class=bemClass + '__content') 
+      div(class=bemClass + '__item') 
+        each item in data
+          span(class=bemClass + '__str').jsAnim.animated= item.title
+          a(href="")
+            h2.jsHover.jsAnim.animated2= item.name
+    div(class=bemClass + '__scroll') 
+      span(class=bemClass + '__str-2').jsScroll Scroll

@@ -1,0 +1,71 @@
+.module__about-nava
+  padding 100px
+  background: white
+  
+  h3 
+    font-size 21px
+    text-transform: uppercase 
+    black()
+    margin 0 0 50px 0
+    display: block
+    
+  
+  &__heading
+    text-align: center
+    
+  &__post
+    column-count 2
+    column-gap 190px
+    margin-top 100px
+    opacity 0
+    
+    p 
+      font-size 21px
+      line-height 35px
+      light()
+      padding 0 0 80px 0
+      &:last-child 
+        padding 0px
+      
+    span 
+      font-size 21px 
+      black()
+      text-transform: uppercase
+      line-height 35px
+      display flex
+      +before('')
+        display: block
+        width 50px 
+        height 2px
+        background: $dark
+        static()
+        margin 0 50px 0 0
+        position: relative
+        top 15px
+
+.str_black
+  opacity 0
+  text-transform: uppercase
+  black()
+  color $dark
+  font-size 24px
+  +after('')
+    width 50px 
+    height 2px 
+    display: block
+    margin 40px auto
+    background-color: $dark
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: both;
+    animation-name zoomIn
+
+.h2_black
+  font-size 52px
+  black()
+  opacity: 0
+  color $dark
+  span 
+    font-size 52px 
+    black()
+    opacity 0

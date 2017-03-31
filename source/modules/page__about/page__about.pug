@@ -1,0 +1,29 @@
+include ../module__about-top/module__about-top
+include ../module__about-nava/module__about-nava
+include ../module__about-slider/module__about-slider
+include ../module__about-fucts/module__about-fucts
+include ../module__about-domain/module__about-domain
+include ../module__about-technologies/module__about-technologies
+include ../module__about-team/module__about-team
+include ../module__together/module__together
+
+mixin page__about(data)
+  - var bemClass = 'page__about'
+  section.page__about&attributes(attributes)
+    .container
+      
+      +module__about-top(moduleAboutTop.aboutTop)
+      
+      +module__about-nava()
+
+      +module__about-slider()
+      
+      +module__about-fucts()
+
+      +module__about-domain().module__about-domain_bg
+
+      +module__about-technologies()
+
+      +module__about-team()
+
+      +module__together()

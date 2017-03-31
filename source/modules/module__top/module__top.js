@@ -3,10 +3,16 @@
 
     // height detect function
     function heightDetect(){
-        $('.jsHeight').css( 
-            'height', (parseInt($(window).height())-105) + "px"
-        );
-    };
+        if ($(window).width() <= 1900){
+            $('.jsHeight').css( 
+                'height', (parseInt($(window).height())-70) + "px"
+            );
+        } else {
+            $('.jsHeight').css( 
+                'height', (parseInt($(window).height())-105) + "px"
+            );
+        }
+    }
 
     $(window).on('load resize', heightDetect);
 
@@ -16,20 +22,6 @@
         $(this).closest('.jsBg').addClass('jsWhite');
     }, function(){
         $(this).closest('.jsBg').removeClass('jsWhite')
-    });
-
-
-    // slick slider 
-    var slider1 = $('.jsSlick')
-    slider1.slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: true,
-        fade: true,
-        nextArrow: '.slick-prev',
-        prevArrow: '.slick-next'
     });
 
 

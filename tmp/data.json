@@ -12,26 +12,6 @@
 			{
 				"title": "About",
 				"url": "about"
-			},
-			{
-				"title": "Career",
-				"url": "career"
-			},
-			{
-				"title": "Contact",
-				"url": "contact"
-			},
-			{
-				"title": "Projects",
-				"url": "projects"
-			},
-			{
-				"title": "Single-page",
-				"url": "single-page"
-			},
-			{
-				"title": "Contacts",
-				"url": "contacts"
 			}
 		]
 	},
@@ -233,6 +213,14 @@
 				"title": "Exit",
 				"url": false,
 				"submenu": false
+			}
+		]
+	},
+	"moduleAboutTop": {
+		"aboutTop": [
+			{
+				"name": "We live at the intersectionof culture + commerce.",
+				"title": "About us"
 			}
 		]
 	},

@@ -56,6 +56,13 @@
                 </li>
               </ul>
             </nav>
+            <button class="toggle-menu jsMobileDropdown sandwitch">
+              <div class="sandwitch">
+                <span class="sw-topper"></span>
+                <span class="sw-bottom"></span>
+                <span class="sw-footer"></span>
+              </div>
+            </button>
           </div>
         </div>
       </div>
@@ -70,7 +77,7 @@
                   </svg>
                 </div>
                 <div class="module__top-slider jsSlick animated fadeIn">
-                  <div class="module__top-slider__slide" style="background: url(assets/images/slider/1.jpg) no-repeat center;">
+                  <div class="module__top-slider__slide" style="background: url(assets/images/slider/1.jpg) no-repeat center; background-size: cover;">
                     <div class="module__top-slider__slide__item">
                       <span class="module__top-slider__str animated fadeInUp">welcome</span>
                       <a href="">
@@ -79,7 +86,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="module__top-slider__slide" style="background: url(assets/images/slider/2.jpg) no-repeat center;">
+                  <div class="module__top-slider__slide" style="background: url(assets/images/slider/2.jpg) no-repeat center; background-size: cover;">
                     <div class="module__top-slider__slide__item">
                       <span class="module__top-slider__str animated fadeInUp">welcome</span>
                       <a href="">
@@ -88,7 +95,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="module__top-slider__slide" style="background: url(assets/images/slider/1.jpg) no-repeat center;">
+                  <div class="module__top-slider__slide" style="background: url(assets/images/slider/1.jpg) no-repeat center; background-size: cover;">
                     <div class="module__top-slider__slide__item">
                       <span class="module__top-slider__str animated fadeInUp">welcome</span>
                       <a href="">
@@ -97,7 +104,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="module__top-slider__slide" style="background: url(assets/images/slider/2.jpg) no-repeat center;">
+                  <div class="module__top-slider__slide" style="background: url(assets/images/slider/2.jpg) no-repeat center; background-size: cover;">
                     <div class="module__top-slider__slide__item">
                       <span class="module__top-slider__str animated fadeInUp">welcome</span>
                       <a href="">
@@ -139,7 +146,7 @@
               </div>
             </section>
             <section class="module__grid">
-              <div class="row between wrap">
+              <div class="module__grid__row row between wrap">
                 <div class="module__grid__column">
                   <div class="module__grid__item jsGrid">
                     <img class="module__grid__img" src="assets/images/projects/1.jpg" alt="Formula Palmer Audi" />
@@ -178,8 +185,8 @@
                       <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
                     </a>
                   </div>
-                  <div class="module__grid__item jsGrid">
-                    <a class="module__grid__layer" href="single-page.html">
+                  <div class="module__grid__item module__grid__item_blue jsGrid">
+                    <a href="">
                       <span class="module__grid__cat">+30 project</span>
                       <span class="module__grid__name">View all</span>
                     </a>
@@ -204,12 +211,66 @@
             <section class="module__category">
               <h2>Culture and Feed</h2>
             </section>
-            <section class="module__blog"></section>
-            <section class="module__together"></section>
+            <section class="module__blog">
+              <div class="module__blog__row row">
+                <div class="col__50 module__blog__item__content">
+                  <img class="module__blog__img" src="assets/images/blog/1.jpg" alt="" />
+                  <div class="module__blog__item module__blog__item_absolute">
+                    <span class="module__blog__date">05.10.2017</span>
+                    <a class="module__blog__link" href="single-page.html">Nominated for Webby Award for Best Association</a>
+                    <a class="module__blog__more" href="singel-page.html">More </a>
+                  </div>
+                </div>
+                <div class="col__50">
+                  <div class="row">
+                    <div class="col__50">
+                      <img class="module__blog__img" src="assets/images/blog/2.jpg" alt="" />
+                    </div>
+                    <div class="col__50">
+                      <div class="module__blog__item module__blog__item_padding">
+                        <span class="module__blog__date">05.10.2017</span>
+                        <a class="module__blog__link" href="single-page.html">Navat Soft Launches New Economic Devel..</a>
+                        <a class="module__blog__more" href="singel-page.html">More </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="module__blog__twitter">
+                    <svg class="icon icon_twitter">
+                      <use xlink:href="assets/images/icons.svg#twitter"></use>
+                    </svg>
+                    <p>The Association of Marketing and Communication Professionals (AMCP) recognized DigitalUs for outstanding achievement with the FDF site.</p>
+                    <a href="">http://efirmedia.com</a>
+                  </div>
+                </div>
+              </div>
+              <div class="module__blog__all row center-c">
+                <a href="">View all articles</a>
+              </div>
+            </section>
+            <section class="module__together jsBg">
+              <div class="module__together__content">
+                <div class="module__together__item">
+                  <h2 class="jsHover jsAnim">Let's work
+                    <br>together</h2>
+                  <span>Ready to get started</span>
+                </div>
+              </div>
+            </section>
           </div>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__row row center between">
+            <span>© 2017 Navat Soft. All Rights Reserved.</span>
+            <div class="row">
+              <a href="mailto:hello@navatsoft.com">hello@navatsoft.com</a>
+              <span class="footer__separator">/ </span>
+              <a href="tel:8014672207">801 467 2207</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="assets/js/plugins/plugins.min.js"></script>

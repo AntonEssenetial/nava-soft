@@ -1,6 +1,17 @@
-// // module__top-slider
-// (function() {
+// module__top-slider
+(function() {
 
-// 	// Your code here
+    // slick slider 
+    var slider1 = $('.jsSlick')
+    slider1.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        fade: true,
+        nextArrow: '.slick-prev',
+        prevArrow: '.slick-next'
+    });
 
-// })();
+})();

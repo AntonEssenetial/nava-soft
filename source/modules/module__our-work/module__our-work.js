@@ -3,9 +3,13 @@
 
     // height detect function
     function heightDetect2(){
-        $('.jsHeight2').css( 
-            'height', $(window).height()
-        );
+        if ($(window).width() >= 768){
+            $('.jsHeight2').css( 
+                'height', $(window).height()
+            );
+        } else if ($(window).width() <= 768) {
+            $('.jsHeight2').css('height', 'auto');
+        } 
     };
 
     $(window).on('load resize', heightDetect2);

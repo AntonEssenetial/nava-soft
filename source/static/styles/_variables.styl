@@ -41,6 +41,7 @@ font-face('roboto-bold-webfont', 'roboto-bold-webfont', 'normal', 'normal')
 font-face('roboto-bolditalic-webfont', 'roboto-bolditalic-webfont', 'normal', 'normal')
 font-face('roboto-thin-webfont', 'roboto-thin-webfont', 'normal', 'normal')
 font-face('roboto-thinitalic-webfont', 'roboto-thinitalic-webfont', 'normal', 'normal')
+font-face('roboto-light-webfont', 'roboto-light-webfont', 'normal', 'normal')
 medium()
   font-family 'roboto-medium-webfont'
 regular()
@@ -52,6 +53,8 @@ bold()
 bold-italic()
   font-family 'roboto-bolditalic-webfont'
 light()
+  font-family 'roboto-light-webfont'
+thin()
   font-family 'roboto-thin-webfont'
 light-italic()
   font-family 'roboto-thinitalic-webfont'
@@ -612,7 +615,7 @@ button
   background-color $button-background
   border-radius $button-radius
   height $button-height
-  line-height $button-height
+  line-height $button-height - 2px
   padding $button-padding
   display inline-block
   font-size $button-size

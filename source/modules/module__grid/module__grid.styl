@@ -9,6 +9,14 @@
     opacity 0
     overflow: hidden
     
+  &__item_blue 
+    padding 50px
+    opacity 0
+    trs()
+    &:hover 
+      background: rgba(48, 48, 48, 0.93) !important
+      trs()
+    
   &__item:hover &__layer 
     opacity 1 
     trs()
@@ -61,9 +69,3 @@
     .module__grid__name
     .module__grid__cat
       display: block
-    
-    .module__grid__layer
-      opacity 1
-      background: transparent
-      &:hover 
-        background: rgba(48, 48, 48, 0.93)

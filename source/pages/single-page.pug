@@ -1,0 +1,31 @@
+include ../modules/injected/injected
+include ../modules/page/page
+
+include ../modules/head/head
+include ../modules/header/header
+include ../modules/footer/footer
+include ../modules/page__single/page__single
+
+//- include ../modules/sidebar/sidebar
+include ../modules/page-title/page-title
+
+- var pageId = 2
+
+
+doctype html
+html(lang=config.lang)
+
+  head
+    +head(head.singlePage)
+
+  +page()
+    +inject('header')
+      +header()
+
+    +inject('page__single')
+      +page__single()
+
+    +inject('footer')
+      +footer()
+
+

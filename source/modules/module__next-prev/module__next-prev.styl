@@ -1,0 +1,57 @@
+.module__next-prev
+  
+  &__link-wrap
+    height 100%
+    position: relative
+  
+  &__item
+    width 50%
+    position: relative
+    &:first-child 
+      text-align: right
+      .module__next-prev__name
+        right 0px
+    &:last-child 
+      .module__next-prev__name
+        left 0px
+    
+  &__link
+    background: white
+    width 100%
+    height @width 
+    position: absolute
+    top 0px 
+    left @top
+    padding 80px 100px
+    &:hover 
+      background rgba(35, 35, 35, 0.9);
+      trs()
+      
+  &__link:hover &__post 
+  &__link:hover &__name
+    color white
+    
+  &__post 
+    font-size 21px 
+    color #272727
+    bold()
+    display: inline-block
+    text-transform: uppercase
+    
+  &__name 
+    font-size 52px
+    color $dark 
+    bold()
+    display: inline-block
+    text-transform: uppercase
+    bottom 0px 
+    position absolute
+    max-height: 94px;
+    overflow: hidden;
+
+    
+  &__img 
+    width 100% 
+    display: block
+    
+

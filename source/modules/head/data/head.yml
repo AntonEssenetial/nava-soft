@@ -58,6 +58,12 @@
       meta: default
       og: default
 
+    blog:
+      title: Blog
+      mobile: true
+      meta: default
+      og: default
+
 
     
 

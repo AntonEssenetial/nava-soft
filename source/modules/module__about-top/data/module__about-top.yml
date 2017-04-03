@@ -4,5 +4,24 @@
       - 
         name: We live at the intersectionof culture + commerce.
         title: About us
-
-      
+        sub: false
+    singlePage:
+      -
+        name: How do you use digital offerings to improve healthcare?
+        title: 14.05.2017 / news / travel
+        sub: false
+    contactPage:
+      -
+        name: How can we help you?
+        title: Contact
+        sub: true
+    projectsPage:
+      -
+        name: With more than 10 years’ experience at combining web development. How can we help you?
+        title: Work
+        sub: false
+    careerPage:
+      -
+        name: At Navat soft, you'll make world-class work with a friendly and talented team.
+        title: Work
+        sub: false

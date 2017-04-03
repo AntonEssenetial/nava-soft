@@ -1,0 +1,57 @@
+include ../module__about-top/module__about-top
+include ../module__together/module__together
+include ../icon/icon
+
+mixin page__career(data)
+  - var bemClass = 'page__career'
+  section.page__career&attributes(attributes)
+    .container
+      
+      +module__about-top(moduleAboutTop.careerPage)
+
+      - var bemClass = 'module__contact'
+      section.module__contact&attributes(attributes).module__contact_white
+        div(class=bemClass + '__content') 
+          div(class=bemClass + '__heading') 
+            span(class=bemClass + '__str').jsAnim.str_black OPEN POSITIONS
+            h2.jsAnim.h2_black Are you our new tallent?
+
+          div(class=bemClass + '__career') 
+            -for (var x = 0; x < 4; x ++)
+              div(class=bemClass + '__item').jsCareer.row.between.center
+                .row.between(class=bemClass + '__str__row') 
+                  span(class=bemClass + '__str-1') Front-end Developer Intern
+                  span(class=bemClass + '__str-1') minsk / Full-time
+                span(class=bemClass + '__str-1') +
+
+          .popup
+            .popup__contanier.animated.fadeIn
+              +icon('close')
+              - var bemClass = 'module__contact'
+              .popup__top
+                div(class=bemClass + '__heading') 
+                  span(class=bemClass + '__str').str_black Job opening
+                  h2.h2_black Are you our new Tallent?
+                p This is an excellent opportunity for both front- and back-end developers to learn from and work with a great team of developers, creatives, designers, producers, and directors to create immersive interactive experiences at one of the fastest growing creative studios.
+                p An awareness of Canvas drawing, animation libraries, SVG, WebGL, etc. would be an advantage. Most importantly, you should have refined aesthetics, a strong knowledge of emergent trends in the interactive space and you must be comfortable spending time polishing visual effects.
+                h3 What you’ll do
+                ul 
+                  li Work as a full member of the technical team alongside our design, UX, and production departments in the creation of digital experiences for real clients.
+                  li Hone your critical thinking and creative problem solving abilities.
+                  li Learn how to contribute to larger scale builds as a member of 2-6 person development teams.
+                  li Become better acquainted with the fundamentals of the web — HTML, CSS, JavaScript, AMD, Node.js, MVC frameworks, design patterns, data driven applications and WebGL.
+                  li Gain an understanding of server architecture, dev ops, and API development.
+              div(class=bemClass + '__form')
+                h2.h2_black APPLY FOR THIS POSITION
+                form(action="")
+                  input.form__input(type="text" placeholder='First Name')
+                  input.form__input(type="text" placeholder='Last Name')
+                  input.form__input(type="text" placeholder='Email')
+                  input.form__input(type="text" placeholder='Phone num')
+                  input.form__input(type="text" placeholder='Linkedin')
+                  input.form__input(type="text" placeholder='Portfolio url')
+                  textarea.form__area(type="text" placeholder='About you')
+                  span(class=bemClass + '__required')  * required
+                  button.button.button_black Submit application
+
+      +module__together()

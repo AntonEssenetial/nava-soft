@@ -7,7 +7,7 @@
   &__item 
     background: $soft
     padding 73px
-    height 50%
+    height 100%
     
   &__item_padding
     padding-bottom 0px
@@ -18,9 +18,13 @@
     right 0px 
     bottom 0px
     padding-bottom 0px
+    height 50%
     
   &__item__content
-    background: $dark
+    display flex 
+    flex-direction column
+    .row 
+      height 50%
     
   &__date
   &__more 
@@ -42,19 +46,19 @@
     
   &__more 
     position: relative
-    +after('')
-      left -130px
-      top 50%
-      height 2px 
-      width 100px 
-      background: $dark
-      display block
-      position absolute
-      transform scale(0)
-      trs()
-    &:hover:after
-      transform scale(1)
-      trs()
+    // +after('')
+    //   left -130px
+    //   top 50%
+    //   height 2px 
+    //   width 100px 
+    //   background: $dark
+    //   display block
+    //   position absolute
+    //   transform scale(0)
+    //   trs()
+    // &:hover:after
+    //   transform scale(1)
+    //   trs()
     
   &__twitter 
     background: $blue

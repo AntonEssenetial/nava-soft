@@ -1,2 +1,43 @@
 .side-nav
-	//
+  position: relative 
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  animation-name: fadeIn
+  animation-delay: 0s
+  
+  .menu 
+    height 106px
+  
+  &__link
+    margin 0 30px
+    bordered-center($grey, 21px, $dark)
+    padding 0 0 5px 0
+    black()
+    &:first-child 
+      margin-left 0px
+    
+  &__item_active &__link
+    color $dark
+    +before('')
+      transform scaleX(1)
+      visibility visible
+      background: $dark
+      
+  &__button 
+    font-size 14px 
+    black()
+    text-transform: uppercase
+    calor $dark 
+    background: white
+    padding 20px
+    cursor pointer
+    display: none
+    +after('+')
+      color $dark
+      margin-left 10px
+    &:hover 
+      opacity: 0.6
+      
+  &__button.active 
+    +after()
+      content '-'

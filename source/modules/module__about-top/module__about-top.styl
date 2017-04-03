@@ -6,6 +6,20 @@
   display flex 
   flex-direction column
   overflow hidden
+  
+  &_bg-2
+    background: url('../images/background/7.jpg') no-repeat center;
+    background-size cover
+    
+  &__tel 
+    margin-top 20px
+    a
+      display: block
+      font-size 52px
+      black()
+      opacity: 0
+      text-transform: uppercase
+      color white    
 
   +before('')
     background: rgba(0, 47, 109, 0.9);
@@ -99,9 +113,12 @@
   
   .module__about-top__str
   .module__about-top__str-2
+  .module__about-top__tel a
     color $dark
+    trs()
     +after()
       background: $dark
+      trs()
       
 
   

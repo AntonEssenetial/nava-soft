@@ -1,4 +1,36 @@
 ---
-  side-nav:
+  sideNav:
     default:
-      
+      -
+        name: All
+        href: blog.html
+      -
+        name: Tech
+        href: blog.html
+      -
+        name: Events
+        href: blog.html
+      - 
+        name: Our work
+        href: blog.html
+      -
+        name: Community
+        href: blog.html
+
+    projects:
+      -
+        name: All        
+        href: projects.html
+      -
+        name: Social        
+        href: projects.html
+      -
+        name: Ecomerce        
+        href: projects.html
+      -
+        name: Travel        
+        href: projects.html
+      -
+        name: Other
+        href: projects.html
+        

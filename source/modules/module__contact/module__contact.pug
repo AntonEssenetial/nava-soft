@@ -1,0 +1,16 @@
+mixin module__contact(data)
+  - var bemClass = 'module__contact'
+  section.module__contact&attributes(attributes)
+    div(class=bemClass + '__content') 
+      div(class=bemClass + '__heading') 
+        span(class=bemClass + '__str').jsAnim.str_black NEW BUSINESS
+        h2.jsAnim.h2_black Interested in <br> working together?
+      div(class=bemClass + '__form')
+        form(action="")
+          input.form__input(type="text" placeholder='Name')
+          input.form__input(type="text" placeholder='Email')
+          input.form__input(type="text" placeholder='Company')
+          input.form__input(type="text" placeholder='Country')
+          textarea.form__area(type="text" placeholder='Deatils')
+          span(class=bemClass + '__required')  * required
+          button.button.button_black Submit application

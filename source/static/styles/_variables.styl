@@ -103,22 +103,23 @@ $col-margin = 30px
 
 
 // Label - input
-$input-size = 18px
-$input-color = $dark
-$input-background = white
+$input-size = 21px
+$input-color = #888888
+$input-background = transparent
 $input-border-radius = 0
-$input-height = 38px
-$input-margin = 7px 0 0 0 
+$input-height = 70px
+$input-margin = 30px 0 0 0 
 $label-margin = 0 0 20px 0
 $label-color = $dark 
-$label-size = 11px
-$input-padding = 10px 10px
+$label-size = 21px
+$input-padding = 10px 0px
 $input-border-color = $border
-$place-holder-default = grey2
+$place-holder-default = #888888
 input-border()
-  border 1px solid $input-border-color
+  border-bottom 2px solid #888
   &:focus 
-    border-color $dark-aqua
+    trs()
+    border-color $dark
     color $dark
 
 
@@ -273,44 +274,6 @@ $warning         =  #cdb933
     height 100% 
 
 
-// Custom functions
-layer-skew( $h , $w , $c )
-  position: relative
-  +after('')
-    position: absolute
-    border-bottom $h solid $c
-    border-right 0px solid transparent
-    border-left $w solid transparent
-    left $w - ($w*2)
-    top -0px
-  +before('')
-    position: absolute
-    border-left $w solid $c
-    border-right 0px solid transparent
-    border-bottom $h solid transparent
-    right $w - ($w*2)
-    top -0px
-button-skew( $h , $w , $c, $hc )
-  position: relative
-  +after('')
-    position: absolute
-    border-bottom $h solid $c
-    border-right 0px solid transparent
-    border-left $w solid transparent
-    left $w - ($w*2)
-    top -0px
-  +before('')
-    position: absolute
-    border-left $w solid $c
-    border-right 0px solid transparent
-    border-bottom $h solid transparent
-    right $w - ($w*2)
-    top -0px
-  &:hover 
-    +before()
-      border-left-color $hc
-    +after()
-      border-bottom-color $hc
 decor()
   text-decoration underline
   &:hover 
@@ -349,59 +312,6 @@ img-width()
   width 100%
   height auto
 
-  
-// Disabled input
-button:disabled
-  background-color: #cfeded
-  color #7aa6a6
-  cursor: not-allowed;
-  +after('')
-    border-bottom-color #cfeded
-  +before('')
-    border-left-color #cfeded
-  &:hover 
-    color #7aa6a6
-    background-color: #cfeded
-    +after('')
-      border-bottom-color #cfeded
-    +before('')
-      border-left-color #cfeded
-input[type='text']:read-only
-  box-shadow none !important
-  background-color : $BGreadonly
-  color      : $readonly
-  border 1px solid #d1d1d1
-  &:focus
-    // border-color $readonly !important
-    color $readonly
-input[type='button']:disabled,
-select:disabled
-  background : $BGdisabled
-  border     : 1px solid $border-disabled
-  color      : $Dcolor
-  cursor     : not-allowed
-input[type='text']:disabled,
-input[type='submit']:disabled,
-.select_disabled,
-.button_disabled
-  background : $BGdisabled
-  border     : 1px solid $border-disabled
-  color      : $Dcolor
-  cursor     : not-allowed
-.button_disabled:hover
-  background : $BGdisabled !important
-  border     : 1px solid $border-disabled !important
-  color      : $Dcolor !important
-  cursor    : not-allowed !important
-.input_error
-  border     : 1px solid $error !important
-  // box-shadow : inset 0px 0px 0px 1px $error !important
-  color      : $error !important
-.input_success 
-  border     : 1px solid $success !important
-  // box-shadow : inset 0px 0px 0px 1px $success !important
-  color      : $success !important
-  
 
 // Input reset 
 input[type='text']
@@ -441,8 +351,12 @@ select
 .form__area 
   display block
   width 100%
+  black()
+  text-transform: uppercase
 .form__input
 .form__select
+  black()
+  text-transform: uppercase
   display block
   width 100%
   height $input-height
@@ -661,6 +575,13 @@ button
   border-color $blue
   background: $blue
   color white
+.button_black 
+  background-color transparent
+  border-color $dark
+  color $dark
+  &:hover 
+    background-color $dark
+    color white
 .button_yellow 
   // border-color $yellow 
   background: $yellow 
@@ -794,19 +715,6 @@ p
   padding-bottom $text-padding
   line-height $text-line-height
 
-    
-// Banner-link
-bannerLink(bannerLink = false)
-  if bannerLink
-    .banner__link 
-      color $banner-link-color
-      font-size 14px
-      display: block
-    
-
-// Charts 
-a[href='http://www.amcharts.com/javascript-charts/']
-  display none !important
   
 
 // Table reset 
@@ -815,13 +723,15 @@ th
   
 
 // Popup 
+.jsOver 
+  overflow hidden
 .dash-popup.jsVisible
   display flex
   .popup__container
     display flex
 .popup.jsVisible 
   display block
-  .popup__container
+  .popup__contanier
     display block
 .popup
 .dash-popup
@@ -835,297 +745,65 @@ th
   flex-direction column
   flex-wrap wrap
   z-index 104
-
-
-// Bread
-breadCrumbs(breadCrumbs = false)
-  if breadCrumbs
-    .bread-crumbs
-      
+  overflow scroll
+.popup
+  h2 
+    font-size 52px
+  &__top
+    padding 90px 100px
+  &__contanier 
+    background: white
+    width 850px
+    margin 105px auto
+    position: relative
     
-      &__item
-        font-size 15px
-        display: inline-block
-        a 
-          color dark
-          font-size 15px
-        &:last-child
-          color grey2
-          
-      &__separator 
-        display: inline-block
-        margin 0 5px
-        color grey2
+  p 
+    font-size 21px 
+    light()
+    line-height 40px
+    padding 0 0 40px 0
     
-
-// Custom scrollbar
-customScrolCss(customScrolCss = false)
-  if customScrolCss
-    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
-    .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar
-      background: $soft-aqua
-    .mCSB_scrollTools .mCSB_draggerRail
-      background-color: border;
-    .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar
-    .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar
-      background-color: #fff; 
-      background-color: hover;
-  
-
-// Acordion 
-// .acordion
-  
-
-//   &__item
-//     position relative
-//   &__link 
-//     font-size 18px
-//     color black 
-//     bold()
-//     span 
-//       +before('')
-//         sprite()
-//         vam()
-//   &__sub-item 
-//     margin 20px 0 0 0
+  h3, h4, h5, h6
+    black()
+    text-transform: uppercase
+    font-size 21px
+    padding 20px 0 30px 0
     
-
-// Bx slider 
-// .bx-controls
-// .bx-prev 
-//   a
-//     sprite($sprite-bx-prev-2)
-//   &:hover a
-//     sprite($sprite-bx-prev-2-hover)
-// .bx-next 
-//   a
-//     sprite($sprite-bx-next-2)
-//   &:hover a
-//     sprite($sprite-bx-next-2-hover)
+  li 
+    font-size 21px 
+    medium()
+    line-height 40px
+    display flex 
+    +before('')
+      width 5px 
+      height @width 
+      background: $dark 
+      display: inline-block
+      position: relative
+      top 18px
+      margin-right 25px
+      static()
+      border-radius(50%)
     
-
-// Bx custom pager
-// .custom__pager
-  
-
-//   .bx-prev 
-//     sprite($sprite-bx-prev)
-//   .bx-next
-//     sprite($sprite-bx-next)
-
+  ul 
+    margin 0 0 40px 0
     
-
-// Default controls style 
-.bx-controls
-  width: 100%;
-  margin: 0 auto;
-  position: absolute;
-  top: 59%;
-.bx-controls-direction 
-  width 1170px
-  margin 0 auto 
-  position: relative
-  a 
-    opacity: 0.6
-    trs()
-    &:hover 
+  .module__contact__form
+    width 100%
+    background: $soft
+    padding 80px 100px
+    h2 
       opacity: 1
-      trs()
-.bx-wrapper .bx-prev
-  left: 10px;
-  /*background: url(../../images/controls.png) no-repeat 0 -32px;*/
-.bx-wrapper .bx-next
-  right: 10px;
-  /*background: url(../../images/controls.png) no-repeat -43px -32px;*/
-
-
-// Bx slider background slide selector    
-responsiveSlide(responsiveSlide = true)
-  if responsiveSlide
-    .responsiveSlide
-      background: url(../images/slider/1.jpg) center 
-      width 100%
-      height 738px
-
-
-// Ticker
-.ticker
-  width: 100%;
-  font-size: 0px;
-.example-enough-space.has-enough-space 
-  text-align: center;
-  
-
-// FAQ container
-FAQcontainer(FAQcontainer = false)
-  if FAQcontainer 
-    .section__content
-      p 
-        font-size 15px 
-        span 
-          color red
-          font-size 12px 
-          position relative
-          top -5px
-      p  a 
-        color gold
-        font-size 15px
-      p  a 
-        margin-right 3px
-      ol li
-        position: relative;
-        font-size: 15px;
-        line-height: 25px;
-        padding-left: 18px !important;
-        > ul
-          padding-left: 50px;
-        > ol 
-          margin-top 25px
-          padding-left 15px
-        > li 
-          padding-left 10px
-      ul
-        padding-left 20px
-        margin-bottom: 20px;
-        list-style-type: disc;
-        li 
-          line-height: 25px;
-          font-size: 15px;
-          padding-left: 18px !important;
-          ul
-            padding-left 17px
-            margin 0px
-            list-style circle
-      ol 
-        padding-left 18px
-        padding-bottom 15px
-        p  
-          margin 0 0 15px 0 
-          padding 0 0 10px 0
-          span 
-            color red
-            font-size 9px
-            position relative 
-            top -5px
-      .num__items_roman
-        list-style-type: lower-roman !important;
-        margin-bottom 20px
-      h1
-        font-size 32px 
-      h2
-        font-size 24px
-      h3
-        font-size 20px
-      h4
-        font-size 18px
-      h5
-        font-size 16px
-      h6
-        font-size 14px
-      h1, h2, h3, h4, h5, h6
-        color dark
-        margin 0 0 16px 0
-        padding 0px
-      .t-title 
-        font-size: 24px;
-        margin-bottom: 20px;
-        color dark
-    
-
-// Pagination
-pagination(pagination = false)
-  if pagination
-    .pagination
-      &-wrapper 
-        padding 20px 0 0 0
-      ul
-        align-items: center;
-        display flex
-      li
-        margin-right 10px
-        width 45px 
-        height 45px
-        line-height @height
-        text-align: center
-      a
-        width 45px 
-        height @width
-        border 1px solid black2
-        line-height @height
-        text-align: center
-        color black2
-        border-radius(50%)
-        &:hover 
-          border-color red
-      .active 
-        a 
-          background: red
-          border-color red 
-          color white
-      .previous_page.disabled
-        opacity 0.5
-        background: grey2
-        border-color black !important
-        a 
-          cursor default
-      .next_page.disabled
-        opacity 0.5
-        background: grey2
-        border-color black !important
-        a 
-          cursor default
-      .previous_page
-      .next_page
-        height 45px 
-        width auto
-        line-height @height
-        border 1px solid black2
-        padding 0 20px
-        text-align: center
-        align-items: center;
-        justify-content: center;
-        opacity 1
-        border-radius(30px)
-        &:hover 
-          border-color red
-        a
-          border none
-      .previous_page
-        display flex
-        margin-left auto
-        &:hover a 
-          background: none
-          border none
-        &:before 
-          content ''
-          // sprite($sprite-prev-arrow)
-          display block
-          margin 0 10px 0 0 
-      .next_page
-        margin-right 0px !important
-        display flex
-        &:hover a 
-          background: none
-          border none
-        &:after 
-          content ''
-          // sprite($sprite-next-arrow)
-          display block
-          margin 0 0px 0 10px
-          
-
-// Responsive iframe
-responsiveIframe(responsiveIframe = false)
-  if responsiveIframe
-    .iframe-rapper
-      position relative
-      padding-bottom 56.25% /* 16:9 */
-      padding-top 25px
-      height 0
-    .iframe-rapper iframe
-      position absolute
-      top 0
-      left 0
-      width 100%
-      height 100%
-    
+      margin-bottom 40px
+      text-align: center
+      
+.icon_close 
+  width 30px 
+  height @width
+  position absolute
+  right 20px 
+  top @right
+  cursor pointer 
+  opacity 0.6
+  &:hover 
+    opacity 1

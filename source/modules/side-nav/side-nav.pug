@@ -1,8 +1,9 @@
 mixin side-nav(data)
+  .side-nav__button.jsSideNav Projects
   nav.side-nav&attributes(attributes)
-    ul.menu
-      each item, i in items
-        if i === pageId
+    ul.menu.row.center
+      each item, i in data
+        if i === pageId2
           li.side-nav__item.side-nav__item_active
             a.side-nav__link(href=item.href)= item.name
         else

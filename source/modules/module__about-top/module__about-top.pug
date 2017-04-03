@@ -5,7 +5,10 @@ mixin module__about-top(data)
       div(class=bemClass + '__item') 
         each item in data
           span(class=bemClass + '__str').jsAnim.animated= item.title
-          a(href="")
-            h2.jsHover.jsAnim.animated2= item.name
+          h2.jsHover.jsAnim.animated2= item.name
+          if (item.sub !== false)
+            div(class=bemClass + '__tel').jsHover
+              a(href="mailto:info@navatsoft.com").jsAnim.animated2 info@navatsoft.com 
+              a(href="tel:18988889999").jsAnim.animated2 +1 898 888 9999
     div(class=bemClass + '__scroll') 
       span(class=bemClass + '__str-2').jsScroll Scroll

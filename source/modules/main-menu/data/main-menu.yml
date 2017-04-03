@@ -3,7 +3,7 @@
     default:
       -
         title: Projects
-        url: projcts
+        url: projects
         submenu: false
       -
         title: About us
@@ -15,7 +15,7 @@
         submenu: false
       - 
         title: Careers
-        url: careers
+        url: career
         submenu: false
       - 
         title: Contacts Us

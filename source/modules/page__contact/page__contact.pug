@@ -1,0 +1,11 @@
+include ../module__about-top/module__about-top
+include ../module__contact/module__contact
+
+mixin page__contact(data)
+  - var bemClass = 'page__contact'
+  section.page__contact&attributes(attributes)
+    .container
+
+      +module__about-top(moduleAboutTop.contactPage).module__about-top_bg-2
+
+      +module__contact

@@ -12,8 +12,35 @@
 			{
 				"title": "About",
 				"url": "about"
+			},
+			{
+				"title": "Single-page",
+				"url": "single-page"
+			},
+			{
+				"title": "Career",
+				"url": "career"
+			},
+			{
+				"title": "Contact",
+				"url": "contact"
+			},
+			{
+				"title": "Projects",
+				"url": "projects"
 			}
 		]
+	},
+	"config": {
+		"projectName": "NAVATSOFT",
+		"lang": "en",
+		"path": {
+			"favicons": "assets/favicons",
+			"styles": "assets/css",
+			"scripts": "assets/javascripts",
+			"images": "assets/images",
+			"fonts": "assets/fonts"
+		}
 	},
 	"breadCrumbs": {
 		"default": [
@@ -33,17 +60,6 @@
 				"title": "Page"
 			}
 		]
-	},
-	"config": {
-		"projectName": "NAVATSOFT",
-		"lang": "en",
-		"path": {
-			"favicons": "assets/favicons",
-			"styles": "assets/css",
-			"scripts": "assets/javascripts",
-			"images": "assets/images",
-			"fonts": "assets/fonts"
-		}
 	},
 	"footerNav": {
 		"default": [
@@ -148,13 +164,19 @@
 			"mobile": true,
 			"meta": "default",
 			"og": "default"
+		},
+		"blog": {
+			"title": "Blog",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
 		}
 	},
 	"mainMenu": {
 		"default": [
 			{
 				"title": "Projects",
-				"url": "projcts",
+				"url": "projects",
 				"submenu": false
 			},
 			{
@@ -169,7 +191,7 @@
 			},
 			{
 				"title": "Careers",
-				"url": "careers",
+				"url": "career",
 				"submenu": false
 			},
 			{
@@ -220,7 +242,36 @@
 		"aboutTop": [
 			{
 				"name": "We live at the intersectionof culture + commerce.",
-				"title": "About us"
+				"title": "About us",
+				"sub": false
+			}
+		],
+		"singlePage": [
+			{
+				"name": "How do you use digital offerings to improve healthcare?",
+				"title": "14.05.2017 / news / travel",
+				"sub": false
+			}
+		],
+		"contactPage": [
+			{
+				"name": "How can we help you?",
+				"title": "Contact",
+				"sub": true
+			}
+		],
+		"projectsPage": [
+			{
+				"name": "With more than 10 years’ experience at combining web development. How can we help you?",
+				"title": "Work",
+				"sub": false
+			}
+		],
+		"careerPage": [
+			{
+				"name": "At Navat soft, you'll make world-class work with a friendly and talented team.",
+				"title": "Work",
+				"sub": false
 			}
 		]
 	},
@@ -253,10 +304,112 @@
 				"name": "Formula Palmer Audi",
 				"cat": "Design / Development"
 			}
+		],
+		"third": [
+			{
+				"src": "/projects/1.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
+				"src": "/projects/3.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
+				"src": "/projects/5.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
+				"src": "/projects/7.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
+				"src": "/projects/9.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
+				"src": "/projects/11.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			}
+		],
+		"forth": [
+			{
+				"src": "/projects/2.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
+				"src": "/projects/4.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
+				"src": "/projects/11.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
+				"src": "/projects/8.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
+				"src": "/projects/10.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			}
 		]
 	},
-	"side-nav": {
-		"default": null
+	"sideNav": {
+		"default": [
+			{
+				"name": "All",
+				"href": "blog.html"
+			},
+			{
+				"name": "Tech",
+				"href": "blog.html"
+			},
+			{
+				"name": "Events",
+				"href": "blog.html"
+			},
+			{
+				"name": "Our work",
+				"href": "blog.html"
+			},
+			{
+				"name": "Community",
+				"href": "blog.html"
+			}
+		],
+		"projects": [
+			{
+				"name": "All",
+				"href": "projects.html"
+			},
+			{
+				"name": "Social",
+				"href": "projects.html"
+			},
+			{
+				"name": "Ecomerce",
+				"href": "projects.html"
+			},
+			{
+				"name": "Travel",
+				"href": "projects.html"
+			},
+			{
+				"name": "Other",
+				"href": "projects.html"
+			}
+		]
 	},
 	"static-menu": {
 		"default": null

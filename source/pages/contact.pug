@@ -1,0 +1,32 @@
+include ../modules/injected/injected
+include ../modules/page/page
+
+include ../modules/head/head
+include ../modules/header/header
+include ../modules/footer/footer
+include ../modules/page__contact/page__contact
+
+//- include ../modules/sidebar/sidebar
+include ../modules/page-title/page-title
+
+- var pageId = 4
+- var pageId2 = 0
+
+
+doctype html
+html(lang=config.lang)
+
+  head
+    +head(head.contact)
+
+  +page()
+    +inject('header')
+      +header()
+
+    +inject('page__contact')
+      +page__contact()
+
+    +inject('footer')
+      +footer()
+
+

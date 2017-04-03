@@ -1,0 +1,16 @@
+mixin module__next-prev(data)
+  - var bemClass = 'module__next-prev'
+  section.module__next-prev&attributes(attributes)
+    div(class=bemClass + '__row').row 
+      div(class=bemClass + '__item') 
+        img(class=bemClass + '__img' src=config.path.images + '/background/6.jpg', alt="")
+        a(hrfe='#' class=bemClass + '__link')
+          div(class=bemClass + '__link-wrap')  
+            span(class=bemClass + '__post') Previous post
+            span(class=bemClass + '__name') Most common software
+      div(class=bemClass + '__item') 
+        img(class=bemClass + '__img' src=config.path.images + '/background/6.jpg', alt="")
+        a(hrfe='#' class=bemClass + '__link')
+          div(class=bemClass + '__link-wrap')  
+            span(class=bemClass + '__post') Next post
+            span(class=bemClass + '__name') Keep calm and dream on.

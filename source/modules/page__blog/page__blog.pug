@@ -1,8 +1,17 @@
 include ../module__top/module__top
+include ../side-nav/side-nav
+include ../module__blog-content/module__blog-content
+include ../module__together/module__together
 
 mixin page__blog(data)
   - var bemClass = 'page__blog'
   section.page__blog&attributes(attributes)
-    .contanier 
+    .container
 
       +module__top()
+
+      +side-nav(sideNav.default)
+
+      +module__blog-content()
+
+      +module__together()

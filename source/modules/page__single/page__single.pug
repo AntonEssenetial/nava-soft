@@ -1,0 +1,26 @@
+include ../module__about-top/module__about-top
+include ../module__about-nava/module__about-nava
+include ../module__about-nava-2/module__about-nava-2
+include ../module__about-slider/module__about-slider
+include ../module__next-prev/module__next-prev
+include ../module__social/module__social
+include ../module__together/module__together
+
+mixin page__single(data)
+  - var bemClass = 'page__single'
+  section.page__single&attributes(attributes)
+    .container
+      
+      +module__about-top(moduleAboutTop.singlePage)
+      
+      +module__about-nava()
+
+      +module__about-slider()
+
+      +module__about-nava-2()
+
+      +module__social()
+      
+      +module__next-prev()
+
+      +module__together()

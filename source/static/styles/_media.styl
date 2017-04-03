@@ -1,7 +1,18 @@
 // Media queries, example +width-range(10em, 20em)
 +width-max(1900px)
+  .module__contact__str-1
+    font-size 21px
+  .popup__contanier
+    width 570px
+    margin 70px auto
+  .module__contact__item
+    padding 50px 70px
+  .module__contact__form
+    width 430px
   .module__about-team__content,
-  .module__about-nava
+  .module__about-nava,
+  .popup__top,
+  .popup .module__contact__form
     padding 70px
   .page__wrapper 
     width 100%
@@ -11,9 +22,12 @@
   .header__logo, 
   .main-menu__link,
   .footer__row a, 
-  .footer__row span
+  .footer__row span,
+  .side-nav__link
     font-size 14px
-  .header__row 
+  .header__row,
+  .side-nav .menu,
+  .module__social__row
     height 70px
   .footer
     padding 25px 0
@@ -23,11 +37,15 @@
   .module__our-work h2,
   .module__our-work h2 span,
   .module__about-team h2,
-  .module__about-team h2 span
+  .module__about-team h2 span,
+  .module__next-prev__name
+  .module__about-top__tel a
+  .popup .module__contact__form h2
     font-size 35px
   .module__top-slider h2,
   .module__about-top h2,
-  .h2_black
+  .h2_black,
+  .module__contact h2
     font-size 48px
     line-height 60px
   .module__top-slider__str,
@@ -43,7 +61,8 @@
   .module__about-fucts__str,
   .module__about-fucts__items span,
   .str_black,
-  .module__about-team__name
+  .module__about-team__name,
+  .module__next-prev__post
     font-size 16px
   .str_black::after
   .module__about-fucts__items span::before
@@ -57,12 +76,17 @@
     width 33px
   .module__about-nava__post p
   .module__about-nava__post span
+  .module__about-nava__post ul li
+  .popup p
+  .popup li
     font-size 14px
     line-height 27px
   .module__about-nava__post p
+  .module__about-nava__post ul
     padding 0 0 40px 0
   .module__about-nava__post
     column-gap 130px
+  .module__about-nava__heading
     margin-top 50px
   .module__about-fucts__items p
     font-size 72px
@@ -72,6 +96,19 @@
   .module__about-nava__post h5
     font-size 14px
     margin 0 0 20px 0
+  .popup h3, .popup h4, .popup h5, .popup h6
+  .popup p
+    font-size 14px
+    padding 0 0 20px 0
+  .popup h3, .popup h4, .popup h5, .popup h6
+    margin-top 30px
+  .popup li::before
+    width 3px 
+    height @width
+    margin-right 20px
+    top 11px
+  .popup .module__contact__form h2
+    margin-bottom 20px
   .current, 
   .total
     font-size 16px
@@ -139,10 +176,26 @@
   .module__blog__item_absolute
     padding-bottom 20px
   .module__blog__twitter a
-  .module__about-team__prof
+  .module__about-team__prof,
+  .form__input,
+  .form__area
     font-size 14px
-  .module__about-team__layer
+  .module__about-team__layer,
+  .module__next-prev__link
     padding 70px
+  .form__input
+    height 55px
+  .form__input,
+  .form__area
+    margin: 15px 0 0 0;
+  .form__area
+    height 130px
+    margin 30px 0 0 0
+  .module__contact__heading
+    margin 0 0 50px 0
+  .module__contact__required
+    padding 40px 0
+    font-size 14px
   
 
 +width-max(1430px)
@@ -154,8 +207,14 @@
 +width-max(1240px)
   .module__blog__item_absolute, 
   .module__blog__twitter,
-  .module__blog__item_padding
+  .module__blog__item_padding,
+  .module__next-prev__link
     padding 20px
+  .module__contact__item
+    padding 30px 20px
+    margin 0 -20px
+  .module__contact_white
+    padding 40px 20px
       
 
 +width-max(1100px)
@@ -216,9 +275,19 @@
 
 // iPad mini
 +width-max(768px)
+  .module__contact__str__row
+    flex-direction column
+    .module__contact__str-1:nth-child(2)
+      opacity 0.5
+  .popup__contanier
+    width 100%
+  .module__social__row
+    padding 0 20px
+    width 100%
   .module__top-slider h2, 
   .module__about-top h2, 
-  .h2_black
+  .module__contact h2,
+  .h2_black,
   h2
     font-size: 38px;
     line-height: 49px;
@@ -235,9 +304,12 @@
     padding 0px
   .header__row
     padding 0 20px
-  .footer 
+  .footer,
+  .side-nav
     padding-left 20px 
     padding-right 20px
+  .side-nav
+    background: white
   .module__top__scroll
   .module__about-top__scroll
     display: none
@@ -255,6 +327,46 @@
 
 
 +width-max(660px)
+  .popup__top
+  .popup .module__contact__form
+    padding 40px 30px
+  .module__next-prev__link-wrap
+    height auto
+  .module__next-prev__name
+    position: relative
+    margin 10px 0 0 0
+  .module__next-prev__item:first-child .module__next-prev__name
+    left 0px
+    right auto
+  .module__contact__required
+    padding 30px 0
+  .module__contact
+    padding 30px 20px
+  .module__contact__form
+    width 100%
+  .module__next-prev__row
+    flex-direction column
+  .module__next-prev__item
+    width 100%
+    &:first-child 
+      text-align left
+  .side-nav__button
+    display block
+  .side-nav.active 
+    display: block
+  .side-nav 
+    display none
+    border-top 1px solid $dash-border
+    border-bottom 1px solid $dash-border
+    .menu 
+      padding 5px 0
+      height auto
+      display block
+      background: white
+      a 
+        padding 10px 0
+  .side-nav__link::before
+    bottom 5px
   .module__about-slider__nav
     width 100%
     padding 0 20px
@@ -331,7 +443,8 @@
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2)
   .page__wrapper
     margin-top: 70px;
-  
+  .module__about-top__tel a
+    font-size 15px  
     
 
 // iPohne 6+
@@ -341,9 +454,14 @@
   .module__top-slider h2, 
   .module__about-top h2, 
   .h2_black, 
+  .module__contact h2,
   h2
     font-size: 33px;
     line-height: 44px;
+  .module__next-prev__post
+    font-size 14px
+  .module__next-prev__name
+    font-size 28px
 
 
 // iPhone 6

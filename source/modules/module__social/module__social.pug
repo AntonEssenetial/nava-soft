@@ -1,0 +1,16 @@
+include ../icon/icon
+
+mixin module__social(data)
+  - var bemClass = 'module__social'
+  section.module__social&attributes(attributes)
+    div(class=bemClass + '__row').center.between.row 
+      a(href="")
+        +icon('linkedin')
+      a(href="")
+        +icon('facebook')
+      a(href="")
+        +icon('google')
+      a(href="")
+        +icon('twitter')
+
+    

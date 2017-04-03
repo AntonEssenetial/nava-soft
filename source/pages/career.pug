@@ -1,0 +1,32 @@
+include ../modules/injected/injected
+include ../modules/page/page
+
+include ../modules/head/head
+include ../modules/header/header
+include ../modules/footer/footer
+include ../modules/page__career/page__career
+
+//- include ../modules/sidebar/sidebar
+include ../modules/page-title/page-title
+
+- var pageId = 3
+- var pageId2 = 0
+
+
+doctype html
+html(lang=config.lang)
+
+  head
+    +head(head.career)
+
+  +page()
+    +inject('header')
+      +header()
+
+    +inject('page__career')
+      +page__career()
+
+    +inject('footer')
+      +footer()
+
+

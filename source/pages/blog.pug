@@ -10,13 +10,14 @@ include ../modules/page__blog/page__blog
 include ../modules/page-title/page-title
 
 - var pageId = 2
+- var pageId2 = 0
 
 
 doctype html
 html(lang=config.lang)
 
   head
-    +head(head.home)
+    +head(head.blog)
 
   +page()
     +inject('header')

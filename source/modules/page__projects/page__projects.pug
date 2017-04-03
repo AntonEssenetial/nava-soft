@@ -1,0 +1,21 @@
+include ../module__about-top/module__about-top
+include ../side-nav/side-nav
+include ../module__grid/module__grid
+include ../module__together/module__together
+
+mixin page__projects(data)
+  - var bemClass = 'page__projects'
+  section.page__projects&attributes(attributes)
+    
+    .container
+      +module__about-top(moduleAboutTop.projectsPage)
+  
+      +side-nav(sideNav.projects)
+
+      - var bemClass = 'module__grid'
+      section.module__grid&attributes(attributes)
+        div(class=bemClass + '__row').row.between.wrap 
+          +module__grid__item(moduleGrid.third)
+          +module__grid__item(moduleGrid.forth)
+  
+      +module__together()

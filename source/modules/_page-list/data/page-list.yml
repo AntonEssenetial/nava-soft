@@ -9,18 +9,15 @@ pageList:
     -
       title: About 
       url: about
-    # -
-    #   title: Career
-    #   url: career
-    # - 
-    #   title: Contact
-    #   url: contact
-    # -
-    #   title: Projects
-    #   url: projects
-    # -
-    #   title: Single-page
-    #   url: single-page
-    # -
-    #   title: Contacts
-    #   url: contacts
+    -
+      title: Single-page
+      url: single-page
+    -
+       title: Career
+       url: career
+    - 
+      title: Contact
+      url: contact
+    -
+      title: Projects
+      url: projects

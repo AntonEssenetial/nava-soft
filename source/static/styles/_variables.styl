@@ -5,7 +5,7 @@ royal-slider(false)
 animate-css(true)
 bxslider(false)
 slick(true)
-customScrollbar(false)
+customScrollbar(true)
 simpleLightBox(false)
 formstyler(false)
 remodal(false)
@@ -279,7 +279,7 @@ decor()
   &:hover 
     text-decoration none
 trs()
-  transition ease-in-out .2s
+  transition ease-in-out .6s
 trs-slow()
   transition ease-in-out .4s
 hover()
@@ -631,7 +631,7 @@ bordered-center( $color = $grey, $size = 21px, $color2 = $dark)
   &:hover 
     color $color2
     trs()
-    +before()
+    &:before
       visibility: visible
       -webkit-transform scaleX(1)
       transform scaleX(1)
@@ -723,38 +723,36 @@ th
   
 
 // Popup 
-.jsOver 
-  overflow hidden
-.dash-popup.jsVisible
-  display flex
-  .popup__container
-    display flex
+
 .popup.jsVisible 
   display block
   .popup__contanier
     display block
 .popup
-.dash-popup
   display none
   position fixed 
-  background: rgba(0,0,0, 0.4)
+  background: rgba(25, 25, 25, 0.9);
   top 0px
   left 0px 
   width 100% 
   height @width
   flex-direction column
   flex-wrap wrap
-  z-index 104
-  overflow scroll
+  z-index 200
 .popup
+  .str_black:after
+    animation: none;
+  overflow hidden
   h2 
     font-size 52px
+    
   &__top
-    padding 90px 100px
+    padding 90px 205px
   &__contanier 
     background: white
-    width 850px
-    margin 105px auto
+    width 1065px
+    margin 0px auto
+    height 100%
     position: relative
     
   p 
@@ -791,19 +789,48 @@ th
   .module__contact__form
     width 100%
     background: $soft
-    padding 80px 100px
+    padding 80px 205px
     h2 
       opacity: 1
       margin-bottom 40px
       text-align: center
       
+
+.popup__close
+  position absolute
+  right 10px 
+  top @right
+  width 80px
+  height 70px
+  display flex
+  z-index 11
 .icon_close 
+  margin auto
   width 30px 
   height @width
-  position absolute
-  right 20px 
-  top @right
   cursor pointer 
-  opacity 0.6
-  &:hover 
-    opacity 1
+  opacity 1
+  color black
+
+    
+.pop  
+  position relative 
+  height 100%
+  
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar
+  background: #5d5d5d
+.mCSB_scrollTools .mCSB_draggerRail
+  background-color: #9a9a9a;
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar
+  background-color: $blue; 
+  background-color: hover;
+.mCSB_scrollTools .mCSB_draggerRail
+.mCSB_scrollTools
+  width 12px
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+  width 12px
+  border-radius 0px
+.mCSB_scrollTools .mCSB_draggerRail
+  border-radius 0px

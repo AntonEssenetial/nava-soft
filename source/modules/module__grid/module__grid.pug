@@ -1,30 +1,34 @@
 mixin module__grid(data)
   - var bemClass = 'module__grid'
-  section.module__grid&attributes(attributes)
-    div(class=bemClass + '__row').row.between.wrap 
+  section.module__grid&attributes(attributes).shuffle3
+    div(class=bemClass + '__column' data-isotope='{ "itemSelector": ".module__grid__item", "layoutMode": "packery" }').shuff
       +module__grid__item(moduleGrid.default)
-      +module__grid__item-2(moduleGrid.second)
+
+      div(class=bemClass + '__item').module__grid__item_blue.jsShuf2 
+        a(href="")
+          span(class=bemClass + '__cat') +30 project
+          span(class=bemClass + '__name') View all
+      .the-sizer2
 
 mixin module__grid__item(data)
   - var bemClass = 'module__grid'
-  div(class=bemClass + '__column')
-    each item in data
-      div(class=bemClass + '__item').jsGrid 
-        img(class=bemClass + '__img' src=config.path.images + item.src , alt= item.name)
-        a(href='single-page.html' class=bemClass + '__layer')
-          span(class=bemClass + '__cat').animated.fadeInUp= item.cat
-          span(class=bemClass + '__name').animated.fadeInUp= item.name
+  each item in data
+    div(class=bemClass + '__item').jsGrid.jsShuf2
+      img(class=bemClass + '__img' src=config.path.images + item.src , alt= item.name)
+      a(href='single-page.html' class=bemClass + '__layer')
+        span(class=bemClass + '__cat').animated.fadeInUp= item.cat
+        span(class=bemClass + '__name').animated.fadeInUp= item.name
 
 mixin module__grid__item-2(data)
   - var bemClass = 'module__grid'
   div(class=bemClass + '__column')
     each item in data
-      div(class=bemClass + '__item').jsGrid 
+      div(class=bemClass + '__item') 
         img(class=bemClass + '__img' src=config.path.images + item.src , alt= item.name)
         a(href='single-page.html' class=bemClass + '__layer')
           span(class=bemClass + '__cat').animated.fadeInUp= item.cat
           span(class=bemClass + '__name').animated.fadeInUp= item.name
-    div(class=bemClass + '__item').module__grid__item_blue.jsGrid 
+    div(class=bemClass + '__item').module__grid__item_blue 
       a(href="")
         span(class=bemClass + '__cat') +30 project
         span(class=bemClass + '__name') View all

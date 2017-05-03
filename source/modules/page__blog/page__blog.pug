@@ -9,8 +9,14 @@ mixin page__blog(data)
     .container
 
       +module__top()
-
-      +side-nav(sideNav.default)
+      
+      nav.side-nav&attributes(attributes)
+        ul.menu.row.center.filter-options
+          li.side-nav__link(data-filter='.all').active All
+          li.side-nav__link(data-filter='.social') Social
+          li.side-nav__link(data-filter='.ecomerce') Ecomerce
+          li.side-nav__link(data-filter='.travel') Travel
+          li.side-nav__link(data-filter='.other') Other
 
       +module__blog-content()
 

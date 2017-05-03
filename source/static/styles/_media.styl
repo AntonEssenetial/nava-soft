@@ -1,19 +1,51 @@
 // Media queries, example +width-range(10em, 20em)
 +width-max(1900px)
+  .trUp
+    transform: translateY(-70px) 
+  .trDown
+    transform: translateY(0px)   
+  .trDown-2
+    transform: translateY(68px)
+  .module__social .icon_linkedin
+  .module__social .icon_facebook
+  .module__social .icon_twitter
+  .module__social .icon_google
+    width: 19px;
+    height @width
+  .popup__close
+    width 60px 
+    height 50px
+    .icon
+      width 20px 
+      heigt @width
+  .module__grid__layer
+  .module__grid__item_blue
+    padding 68px
+  .module__blog__more::after
+    width 80px 
+    left -100px
+  .module__about-us__str-2
+    margin 50px 0
+  main 
+    padding-top 70px
+  .module__next-prev__item
+    height 320px
   .module__contact__str-1
     font-size 21px
   .popup__contanier
     width 570px
-    margin 70px auto
   .module__contact__item
     padding 50px 70px
   .module__contact__form
     width 430px
+  .module__about-nava__heading
+    margin-bottom 50px
   .module__about-team__content,
-  .module__about-nava,
   .popup__top,
   .popup .module__contact__form
     padding 70px
+  .module__about-nava
+    padding 15px 70px 20px 70px
   .page__wrapper 
     width 100%
     min-width 320px
@@ -83,7 +115,8 @@
     line-height 27px
   .module__about-nava__post p
   .module__about-nava__post ul
-    padding 0 0 40px 0
+  .module__about-nava__post span
+    margin 0 0 40px 0
   .module__about-nava__post
     column-gap 130px
   .module__about-nava__heading
@@ -138,9 +171,10 @@
     font-size 16px
   .module__category
     padding 135px 0
+    background: image-url('02.png') no-repeat center #fff
   .module__category::after
     font-size 140px
-    left: 52%;
+    left: 51.4%;
   .module__grid__name
     font-size 38px
     line-height 50px
@@ -159,9 +193,11 @@
     padding 50px
   .module__blog__item_padding
     padding 50px 50px 0 50px
-  .module__blog__link,
+  .module__blog__link
+    margin 28px 0 28px 0
+    height auto
   .module__blog__twitter p
-    margin 28px 0
+    margin 23px 0 28px 0
     height auto
   .module__blog__all 
     padding: 26px 0;
@@ -196,6 +232,12 @@
   .module__contact__required
     padding 40px 0
     font-size 14px
+  .jsScroll
+    height: 80px;
+    &:after 
+      margin: 46px auto 0 auto;
+    &:hover:after 
+      margin: 70px auto 0 auto;
   
 
 +width-max(1430px)
@@ -204,26 +246,29 @@
     height 70px
     
 
++width-max(1350px)
+  .module__blog__more:after
+    display none
+
 +width-max(1240px)
   .module__blog__item_absolute, 
   .module__blog__twitter,
   .module__blog__item_padding,
   .module__next-prev__link
     padding 20px
-  .module__contact__item
-    padding 30px 20px
-    margin 0 -20px
-  .module__contact_white
-    padding 40px 20px
       
 
 +width-max(1100px)
+  .module__blog__link
+    max-width 100%
   .module__blog__row,
   .module__grid__row
     flex-direction column
     > .col__50, 
     .module__grid__column
       width 100%
+    > .col__25
+      width 50%
   .module__about-us__item,
   .module__our-work__item
     max-width 100% 
@@ -238,6 +283,9 @@
     padding 0 20px
   .module__category
     padding 90px 0
+    height 202px
+    h2 
+      line-height 21px 
   .module__category::after
     top 8.6%
     left: 55%;
@@ -247,9 +295,9 @@
   .module__grid__name
     font-size 30px
     line-height 40px
+    max-height: 114px;
   .module__grid__layer
     opacity: 1
-    background: rgba(25, 25, 25, 0.67);
     padding 20px
   .module__grid__item_blue
     padding 20px
@@ -261,8 +309,11 @@
     column-count 1
     span 
       margin 0 0 40px 0
+      padding 0px
   .module__about-nava__post span::before
     margin 0 20px 0px 0
+  .module__grid__item
+    width 100%
     
 
 // iPadi pro 
@@ -275,6 +326,10 @@
 
 // iPad mini
 +width-max(768px)
+  .module__contact__career
+    padding-top 0px
+  .module__grid__column:last-child .module__grid__item:last-child
+    height auto
   .module__contact__str__row
     flex-direction column
     .module__contact__str-1:nth-child(2)
@@ -293,7 +348,10 @@
     line-height: 49px;
   .module__about-team__content,
   .module__about-fucts
+  .module__about-nava
     padding 30px 20px
+  .module__about-nava__heading
+    margin 20px 0 40px 0
   .module__about-team__content
   .module__about-nava
     padding-left 0px 
@@ -327,6 +385,26 @@
 
 
 +width-max(660px)
+  .trUp
+  .trDown
+  .trDown-2
+    transform: translateY(0px)
+  .popup__close
+    width 50px
+    height 30px
+    .icon 
+      width 15px 
+      height @width
+  .module__contact__item
+    padding 30px 20px
+  main 
+    padding-top 0px
+  .side-nav__link
+    padding 10px 0
+    display inline
+    margin-left: 0;
+  .module__next-prev__link
+    position relative
   .popup__top
   .popup .module__contact__form
     padding 40px 30px
@@ -335,9 +413,12 @@
   .module__next-prev__name
     position: relative
     margin 10px 0 0 0
-  .module__next-prev__item:first-child .module__next-prev__name
-    left 0px
-    right auto
+    display block
+  .module__next-prev__item
+    height auto
+    &:first-child .module__next-prev__name
+      left 0px
+      right auto
   .module__contact__required
     padding 30px 0
   .module__contact
@@ -361,7 +442,9 @@
     .menu 
       padding 5px 0
       height auto
-      display block
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
       background: white
       a 
         padding 10px 0
@@ -397,6 +480,7 @@
     flex-direction column
     background: white
     .col__50 
+    .col__25
       width 100%
   .module__blog__item_absolute
     position: relative
@@ -448,13 +532,16 @@
     
 
 // iPohne 6+
-// +width-max(414px)
++width-max(414px)
+  .module__together
+    padding 100px 0
 
 +width-max(413px)
   .module__top-slider h2, 
   .module__about-top h2, 
   .h2_black, 
   .module__contact h2,
+  .popup h2
   h2
     font-size: 33px;
     line-height: 44px;

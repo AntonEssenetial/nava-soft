@@ -10,12 +10,39 @@ mixin page__projects(data)
     .container
       +module__about-top(moduleAboutTop.projectsPage)
   
-      +side-nav(sideNav.projects)
+      nav.side-nav&attributes(attributes)
+        ul.menu.row.center.filter-options
+          li.side-nav__item.side-nav__link.active(data-filter='.all') All
+          li.side-nav__item.side-nav__link(data-filter='.social') Social
+          li.side-nav__item.side-nav__link(data-filter='.ecomerce') Ecomerce
+          li.side-nav__item.side-nav__link(data-filter='.travel') Travel
+          li.side-nav__item.side-nav__link(data-filter='.other') Other
 
       - var bemClass = 'module__grid'
-      section.module__grid&attributes(attributes)
-        div(class=bemClass + '__row').row.between.wrap 
-          +module__grid__item(moduleGrid.third)
-          +module__grid__item(moduleGrid.forth)
-  
+      section.module__grid&attributes(attributes).shuffle
+        div(class=bemClass + '__column')#container
+          //- +module__grid__item(moduleGrid.third)
+          - var bemClass = 'module__grid'
+          - for (var x = 0; x < 15; x ++)
+            div(class=bemClass + '__item' data-category='all social').jsGrid.shuffle__item.all.social
+              img(class=bemClass + '__img' src='assets/images/projects/1.jpg')
+              a(href='single-page.html' class=bemClass + '__layer')
+                span(class=bemClass + '__cat').animated.fadeInUp categroy
+                span(class=bemClass + '__name').animated.fadeInUp name
+            div(class=bemClass + '__item' data-category='all other').jsGrid.shuffle__item.all.other
+              img(class=bemClass + '__img' src='assets/images/projects/3.jpg')
+              a(href='single-page.html' class=bemClass + '__layer')
+                span(class=bemClass + '__cat').animated.fadeInUp categroy
+                span(class=bemClass + '__name').animated.fadeInUp name
+            div(class=bemClass + '__item' data-category='all ecomerce').jsGrid.shuffle__item.all.ecomerce
+              img(class=bemClass + '__img' src='assets/images/projects/4.jpg')
+              a(href='single-page.html' class=bemClass + '__layer')
+                span(class=bemClass + '__cat').animated.fadeInUp categroy
+                span(class=bemClass + '__name').animated.fadeInUp name
+            div(class=bemClass + '__item' data-category='all travel').jsGrid.shuffle__item.all.travel
+              img(class=bemClass + '__img' src='assets/images/projects/5.jpg')
+              a(href='single-page.html' class=bemClass + '__layer')
+                span(class=bemClass + '__cat').animated.fadeInUp categroy
+                span(class=bemClass + '__name').animated.fadeInUp name
+          .the-sizer
       +module__together()

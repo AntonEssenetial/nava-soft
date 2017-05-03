@@ -14,6 +14,9 @@
     width 650px
     margin 0 auto
     
+  &__str-1
+    display: block
+    
   &__required
     font-size 21px 
     black()
@@ -32,3 +35,30 @@
   
 .module__contact_white
   background: white
+  padding 100px 0 0 0
+  
+.data-name 
+  position: relative
+  display block
+  &:after
+    content attr(data-name)
+    position: absolute 
+    right 0px 
+    bottom 20px
+    display block
+    color $dark 
+    font-size 11px
+    opacity: 0px
+    margin-bottom -10px
+    transition ease-in-out .3s
+    
+.data-name.active 
+  &:after 
+    opacity 1
+    transition ease-in-out .3s
+    margin 0px
+    
+.data-text.active 
+  &:after 
+    bottom 20px
+    

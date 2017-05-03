@@ -29,11 +29,6 @@
 //////////////////////////////////////////////////////////////////////////////
 
 
-// JQuery
-// Browser feature detection library for HTML5/CSS3
-//= require jquery/dist/jquery.js
-
-
 // FastclickJS
 // Remove delay between a physical tap and the firing of a click event on mobile browsers.
 //= require fastclick/lib/fastclick.js
@@ -62,11 +57,20 @@
 //= require progress/nprogress.js
 
 
+// Sticky
+// ---------------------------------------------------------------------------
+//= require isotope/isotope.pkgd.min.js
+//= require isotope/packery-mode.pkgd.min.js
+//= require isotope/imagesloaded.pkgd.js
+
+
+// Scrollbar
+// ---------------------------------------------------------------------------
+//= require scrollbar/jquery.mCustomScrollbar.min.js
+
+
 // Slick
 // ---------------------------------------------------------------------------
 //= require slick/slick.min.js
 
 
-// From styler
-// ---------------------------------------------------------------------------
-//= require formstyler/jquery.formstyler.min.js

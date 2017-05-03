@@ -3,7 +3,7 @@ include ../sandwitch/sandwitch
 
 mixin header(data)
   - var bemClass = 'header'
-  .header&attributes(attributes)
+  header#header&attributes(attributes).header
     .container
       div(class=bemClass + '__row').row.center.between
         a(class=bemClass + '__logo' href='home.html') Navatsoft 

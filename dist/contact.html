@@ -33,7 +33,7 @@
     <meta name="theme-color" content="#333366" /> </head>
   <body class="page">
     <div class="page__wrapper">
-      <div class="header">
+      <header class="header" id="header">
         <div class="container">
           <div class="header__row row center between">
             <a class="header__logo" href="home.html">Navatsoft </a>
@@ -65,7 +65,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </header>
       <main class="main">
         <section class="page__contact">
           <div class="container">
@@ -93,11 +93,17 @@
                 </div>
                 <div class="module__contact__form">
                   <form action="">
-                    <input class="form__input" type="text" placeholder="Name" />
-                    <input class="form__input" type="text" placeholder="Email" />
-                    <input class="form__input" type="text" placeholder="Company" />
-                    <input class="form__input" type="text" placeholder="Country" />
-                    <textarea class="form__area" type="text" placeholder="Deatils"></textarea>
+                    <label class="data-name" data-name="Name">
+                      <input class="form__input" type="text" placeholder="Name" /> </label>
+                    <label class="data-name" data-name="Email">
+                      <input class="form__input" type="text" placeholder="Email" /> </label>
+                    <label class="data-name" data-name="Company">
+                      <input class="form__input" type="text" placeholder="Company" /> </label>
+                    <label class="data-name" data-name="Country">
+                      <input class="form__input" type="text" placeholder="Country" /> </label>
+                    <label class="data-name data-text" data-name="Details">
+                      <textarea class="form__area data-name" type="text" placeholder="Details"></textarea>
+                    </label>
                     <span class="module__contact__required"> * required</span>
                     <button class="button button_black">Submit application</button>
                   </form>
@@ -120,7 +126,7 @@
         </div>
       </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="assets/js/plugins/plugins.min.js"></script>
     <script src="assets/js/main/main.min.js"></script>
   </body>

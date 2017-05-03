@@ -14,6 +14,10 @@
         }
     }
 
+    $(document).ready(function() {
+        heightDetect();
+    });
+    
     $(window).on('load resize', heightDetect);
 
 

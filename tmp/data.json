@@ -31,17 +31,6 @@
 			}
 		]
 	},
-	"config": {
-		"projectName": "NAVATSOFT",
-		"lang": "en",
-		"path": {
-			"favicons": "assets/favicons",
-			"styles": "assets/css",
-			"scripts": "assets/javascripts",
-			"images": "assets/images",
-			"fonts": "assets/fonts"
-		}
-	},
 	"breadCrumbs": {
 		"default": [
 			{
@@ -60,6 +49,17 @@
 				"title": "Page"
 			}
 		]
+	},
+	"config": {
+		"projectName": "NAVATSOFT",
+		"lang": "en",
+		"path": {
+			"favicons": "assets/favicons",
+			"styles": "assets/css",
+			"scripts": "assets/javascripts",
+			"images": "assets/images",
+			"fonts": "assets/fonts"
+		}
 	},
 	"footerNav": {
 		"default": [
@@ -283,24 +283,22 @@
 				"cat": "Design / Development"
 			},
 			{
-				"src": "/projects/3.jpg",
-				"name": "Formula Palmer Audi",
-				"cat": "Design / Development"
-			},
-			{
-				"src": "/projects/5.jpg",
-				"name": "Formula Palmer Audi",
-				"cat": "Design / Development"
-			}
-		],
-		"second": [
-			{
 				"src": "/projects/2.jpg",
 				"name": "Formula Palmer Audi",
 				"cat": "Design / Development"
 			},
 			{
+				"src": "/projects/3.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
 				"src": "/projects/4.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
+				"src": "/projects/5.jpg",
 				"name": "Formula Palmer Audi",
 				"cat": "Design / Development"
 			}
@@ -312,34 +310,12 @@
 				"cat": "Design / Development"
 			},
 			{
-				"src": "/projects/3.jpg",
-				"name": "Formula Palmer Audi",
-				"cat": "Design / Development"
-			},
-			{
-				"src": "/projects/5.jpg",
-				"name": "Formula Palmer Audi",
-				"cat": "Design / Development"
-			},
-			{
-				"src": "/projects/7.jpg",
-				"name": "Formula Palmer Audi",
-				"cat": "Design / Development"
-			},
-			{
-				"src": "/projects/9.jpg",
-				"name": "Formula Palmer Audi",
-				"cat": "Design / Development"
-			},
-			{
-				"src": "/projects/11.jpg",
-				"name": "Formula Palmer Audi",
-				"cat": "Design / Development"
-			}
-		],
-		"forth": [
-			{
 				"src": "/projects/2.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
+				"src": "/projects/3.jpg",
 				"name": "Formula Palmer Audi",
 				"cat": "Design / Development"
 			},
@@ -349,7 +325,17 @@
 				"cat": "Design / Development"
 			},
 			{
+				"src": "/projects/5.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
 				"src": "/projects/11.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
+				"src": "/projects/7.jpg",
 				"name": "Formula Palmer Audi",
 				"cat": "Design / Development"
 			},
@@ -359,7 +345,17 @@
 				"cat": "Design / Development"
 			},
 			{
+				"src": "/projects/9.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
 				"src": "/projects/10.jpg",
+				"name": "Formula Palmer Audi",
+				"cat": "Design / Development"
+			},
+			{
+				"src": "/projects/11.jpg",
 				"name": "Formula Palmer Audi",
 				"cat": "Design / Development"
 			}

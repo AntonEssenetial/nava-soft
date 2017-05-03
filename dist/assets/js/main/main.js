@@ -25,6 +25,83 @@ $(window).on("unload", function () {
 });
 
 // Modules
+// header
+(function() {
+
+    // Hide Header on on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = 10;
+    
+    $(window).scroll(hasScrolled);
+    
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+    
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+        
+        // Make sure they scroll more than delta
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return;
+        
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop && st > navbarHeight){
+            // Scroll Down
+            $('header').removeClass('trDown').addClass('trUp');
+
+        } else {
+            // Scroll Up
+            if(st + $(window).height() < $(document).height()) {
+                $('header').removeClass('trUp').addClass('trDown');
+
+            }
+        }
+        
+        lastScrollTop = st;
+    }
+
+// function stickyFunc() {
+//     if($(window).width() > 660){
+//         $('.side-nav').sticky({
+//             topSpacing:0
+//         });
+//     } else {
+//         $('.side-nav').unstick();
+//     }
+// }
+//$(window).on('load resize', stickyFunc)
+
+})();
+
+// module__about-facts
+(function() {
+
+    $(window).scroll(startCounter);
+    function startCounter() {
+        if ($(window).scrollTop() > 2000) {
+            $(window).off("scroll", startCounter);
+            $('.jsNum p').each(function () {
+                var $this = $(this);
+                jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+                    duration: 5000,
+                    easing: 'swing',
+                    step: function () {
+                        $this.text(Math.ceil(this.Counter));
+                    }
+                });
+            });
+        }
+    }
+
+})();
+
 // module__about-slider
 (function() {
 
@@ -67,23 +144,102 @@ $(window).on("unload", function () {
 
 })();
 
-// module__blog-content
+// module__blog_content
 (function() {
 
-    // height detect function
-    function heightDetect3(){
-        if ($(window).width() >= 1100) {
-            $('.module__blog__twitter, .module__blog__item__content .row:first-child, .module__blog__item_padding').css( 
-                'height', $('.module__blog__grid .module__blog__img').height()
-            );
-        } else {
-            $('.module__blog__twitter, .module__blog__item__content .row:first-child, .module__blog__item_padding').css( 
-                'height', 'auto'
-            );
-        }
-    };
 
-    $(window).on('load resize', heightDetect3);
+    $(document).ready(function(){
+
+        heightDetect3();
+        var $grid = $('#container').isotope({
+            itemSelector: '.shuffle__item',
+            layoutMode: 'packery',
+            cellsByRow: {
+                columnWidth: 200,
+                rowHeight: 150
+            },
+            masonry: {
+                columnWidth: '.my-sizer-element'
+            }
+        })
+
+        // filter functions
+        var filterFns = {
+            // show if number is greater than 50
+            numberGreaterThan50: function() {
+                var number = $(this).find('.number').text();
+                return parseInt( number, 10 ) > 50;
+            },
+            // show if name ends with -ium
+            ium: function() {
+                var name = $(this).find('.name').text();
+                return name.match( /ium$/ );
+            }
+        };
+        // bind filter button click
+        $('.filter-options').on( 'click', '.side-nav__link', function() {
+            var filterValue = $( this ).attr('data-filter');
+            // use filterFn if matches value
+            filterValue = filterFns[ filterValue ] || filterValue;
+            $grid.isotope({ filter: filterValue });
+        });
+        // change is-checked class on buttons
+        $('.filter-options').each( function( i, buttonGroup ) {
+            var $buttonGroup = $( buttonGroup );
+            $buttonGroup.on( 'click', '.side-nav__link', function() {
+                $buttonGroup.find('.active').removeClass('active');
+                $( this ).addClass('active');
+            });
+        });
+
+        $grid.imagesLoaded().progress( function() {
+            $grid.isotope('layout');
+        });  
+
+        
+        $(window).load(function(){
+            $grid.isotope('layout');
+        });
+
+
+        $(window).on('load', heightDetect3);
+        $(window).on('resize', heightDetect4);
+    
+    
+        // height detect function
+        function heightDetect3(){
+            
+            var img = $('.jsImgHeight').height()
+            if ($(window).width() >= 1100) {
+                $('.module__blog__twitter, .jsDiv').css( 
+                    'height', img
+                );
+            } else {
+                $('.module__blog__twitter, .jsDiv').css( 
+                    'height', 'auto'
+                );
+            }
+        };
+
+
+        // height detect function
+        function heightDetect4() {
+            
+            var div = $('.jsDivHeight').height()
+    
+            if ($(window).width() >= 1100) {
+                $('.module__blog__twitter, .jsDiv').css( 
+                    'height', div
+                )
+            } else {
+                $('.module__blog__twitter, .jsDiv').css( 
+                    'height', 'auto'
+                );
+            }
+        }
+
+
+    }); 
 
 })();
 
@@ -95,15 +251,40 @@ $(window).on("unload", function () {
         $('body').addClass('jsOver')
     });
 
-    $('.icon_close ').click(function(event) {
+    $('.popup__close').click(function(event) {
         $('.popup').removeClass('jsVisible')
         $('body').removeClass('jsOver')
     });
 
 })();
 
+// module__contact
+(function() {
+
+    $('.data-name').click(function(event) {
+        $('.data-name').removeClass('active')
+        $(this).addClass('active')
+    });
+    $('input,textarea').focus(function(){
+       $(this).data('placeholder',$(this).attr('placeholder'))
+        .attr('placeholder','');
+    }).blur(function(){
+        $(this).attr('placeholder',$(this).data('placeholder'));
+    });
+
+})();
+
 // module__grid
 (function() {
+
+
+
+
+
+    $('.side-nav__link').click(function(event) {
+        $('.jsGrid').addClass('custom');
+    });
+
 
     // detect elements
     var $animation_elements = $('.jsGrid');
@@ -123,9 +304,9 @@ $(window).on("unload", function () {
         //check to see if this current container is within viewport
         if ((element_bottom_position >= window_top_position) &&
             (element_top_position <= window_bottom_position)) {
-          $element.addClass('animated fadeInUp');
+          $element.addClass('custom');
         } else {
-          $element.removeClass('animated fadeInUp');
+          $element.removeClass('custom');
         }
       });
     }
@@ -185,17 +366,19 @@ $(window).on("unload", function () {
 // module__top-slider
 (function() {
 
-    // slick slider 
-    var slider1 = $('.jsSlick')
-    slider1.slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: true,
-        fade: true,
-        nextArrow: '.slick-prev',
-        prevArrow: '.slick-next'
+    $(document).ready(function($) {
+       // slick slider 
+        var slider1 = $('.jsSlick')
+        slider1.slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: true,
+            fade: true,
+            nextArrow: '.slick-prev',
+            prevArrow: '.slick-next'
+        }); 
     });
 
 })();
@@ -216,6 +399,10 @@ $(window).on("unload", function () {
         }
     }
 
+    $(document).ready(function() {
+        heightDetect();
+    });
+    
     $(window).on('load resize', heightDetect);
 
 
@@ -234,6 +421,15 @@ $(window).on("unload", function () {
         $('body').animate({
             scrollTop: windowHeight
         },1000);        
+    });
+
+})();
+
+// page__career
+(function() {
+
+    $('.pop').mCustomScrollbar({
+        scrollInertia:100
     });
 
 })();
@@ -269,7 +465,7 @@ $(window).on("unload", function () {
     $('.jsSideNav').click(function(event) {
         $(this).toggleClass('active');
         $('.side-nav').toggleClass('active');
-    });
+    }); 
 
 })();
 

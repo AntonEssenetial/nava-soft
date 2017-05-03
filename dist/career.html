@@ -33,7 +33,7 @@
     <meta name="theme-color" content="#333366" /> </head>
   <body class="page">
     <div class="page__wrapper">
-      <div class="header">
+      <header class="header" id="header">
         <div class="container">
           <div class="header__row row center between">
             <a class="header__logo" href="home.html">Navatsoft </a>
@@ -65,7 +65,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </header>
       <main class="main">
         <section class="page__career">
           <div class="container">
@@ -118,40 +118,52 @@
                 </div>
                 <div class="popup">
                   <div class="popup__contanier animated fadeIn">
-                    <svg class="icon icon_close">
-                      <use xlink:href="assets/images/icons.svg#close"></use>
-                    </svg>
-                    <div class="popup__top">
-                      <div class="module__contact__heading">
-                        <span class="module__contact__str str_black">Job opening</span>
-                        <h2 class="h2_black">Are you our new Tallent?</h2>
-                      </div>
-                      <p>This is an excellent opportunity for both front- and back-end developers to learn from and work with a great team of developers, creatives, designers, producers, and directors to create immersive interactive experiences at one of
-                        the fastest growing creative studios.</p>
-                      <p>An awareness of Canvas drawing, animation libraries, SVG, WebGL, etc. would be an advantage. Most importantly, you should have refined aesthetics, a strong knowledge of emergent trends in the interactive space and you must be comfortable
-                        spending time polishing visual effects.</p>
-                      <h3>What you’ll do</h3>
-                      <ul>
-                        <li>Work as a full member of the technical team alongside our design, UX, and production departments in the creation of digital experiences for real clients.</li>
-                        <li>Hone your critical thinking and creative problem solving abilities.</li>
-                        <li>Learn how to contribute to larger scale builds as a member of 2-6 person development teams.</li>
-                        <li>Become better acquainted with the fundamentals of the web — HTML, CSS, JavaScript, AMD, Node.js, MVC frameworks, design patterns, data driven applications and WebGL.</li>
-                        <li>Gain an understanding of server architecture, dev ops, and API development.</li>
-                      </ul>
+                    <div class="popup__close">
+                      <svg class="icon icon_close">
+                        <use xlink:href="assets/images/icons.svg#close"></use>
+                      </svg>
                     </div>
-                    <div class="module__contact__form">
-                      <h2 class="h2_black">APPLY FOR THIS POSITION</h2>
-                      <form action="">
-                        <input class="form__input" type="text" placeholder="First Name" />
-                        <input class="form__input" type="text" placeholder="Last Name" />
-                        <input class="form__input" type="text" placeholder="Email" />
-                        <input class="form__input" type="text" placeholder="Phone num" />
-                        <input class="form__input" type="text" placeholder="Linkedin" />
-                        <input class="form__input" type="text" placeholder="Portfolio url" />
-                        <textarea class="form__area" type="text" placeholder="About you"></textarea>
-                        <span class="module__contact__required"> * required</span>
-                        <button class="button button_black">Submit application</button>
-                      </form>
+                    <div class="pop">
+                      <div class="popup__top">
+                        <div class="module__contact__heading">
+                          <span class="module__contact__str str_black">Job opening</span>
+                          <h2 class="h2_black">Are you our new Tallent?</h2>
+                        </div>
+                        <p>This is an excellent opportunity for both front- and back-end developers to learn from and work with a great team of developers, creatives, designers, producers, and directors to create immersive interactive experiences at one
+                          of the fastest growing creative studios.</p>
+                        <p>An awareness of Canvas drawing, animation libraries, SVG, WebGL, etc. would be an advantage. Most importantly, you should have refined aesthetics, a strong knowledge of emergent trends in the interactive space and you must be comfortable
+                          spending time polishing visual effects.</p>
+                        <h3>What you’ll do</h3>
+                        <ul>
+                          <li>Work as a full member of the technical team alongside our design, UX, and production departments in the creation of digital experiences for real clients.</li>
+                          <li>Hone your critical thinking and creative problem solving abilities.</li>
+                          <li>Learn how to contribute to larger scale builds as a member of 2-6 person development teams.</li>
+                          <li>Become better acquainted with the fundamentals of the web — HTML, CSS, JavaScript, AMD, Node.js, MVC frameworks, design patterns, data driven applications and WebGL.</li>
+                          <li>Gain an understanding of server architecture, dev ops, and API development.</li>
+                        </ul>
+                      </div>
+                      <div class="module__contact__form">
+                        <h2 class="h2_black">APPLY FOR THIS POSITION</h2>
+                        <form action="">
+                          <label class="data-name" data-name="First name">
+                            <input class="form__input" type="text" placeholder="First Name" /> </label>
+                          <label class="data-name" data-name="Last name">
+                            <input class="form__input" type="text" placeholder="Last Name" /> </label>
+                          <label class="data-name" data-name="Email">
+                            <input class="form__input" type="text" placeholder="Email" /> </label>
+                          <label class="data-name" data-name="Phone num">
+                            <input class="form__input" type="text" placeholder="Phone num" /> </label>
+                          <label class="data-name" data-name="Linkedin">
+                            <input class="form__input" type="text" placeholder="Linkedin" /> </label>
+                          <label class="data-name" data-name="Portfolio">
+                            <input class="form__input" type="text" placeholder="Portfolio url" /> </label>
+                          <label class="data-name data-text" data-name="About you">
+                            <textarea class="form__area" type="text" placeholder="About you"></textarea>
+                          </label>
+                          <span class="module__contact__required"> * required</span>
+                          <button class="button button_black">Submit application</button>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -182,7 +194,7 @@
         </div>
       </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="assets/js/plugins/plugins.min.js"></script>
     <script src="assets/js/main/main.min.js"></script>
   </body>

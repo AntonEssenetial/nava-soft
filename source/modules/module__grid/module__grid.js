@@ -1,6 +1,15 @@
 // module__grid
 (function() {
 
+
+
+
+
+    $('.side-nav__link').click(function(event) {
+        $('.jsGrid').addClass('custom');
+    });
+
+
     // detect elements
     var $animation_elements = $('.jsGrid');
     var $window = $(window);
@@ -19,9 +28,9 @@
         //check to see if this current container is within viewport
         if ((element_bottom_position >= window_top_position) &&
             (element_top_position <= window_bottom_position)) {
-          $element.addClass('animated fadeInUp');
+          $element.addClass('custom');
         } else {
-          $element.removeClass('animated fadeInUp');
+          $element.removeClass('custom');
         }
       });
     }

@@ -4,6 +4,9 @@
   animation-fill-mode: both;
   animation-name: fadeIn
   animation-delay: 0s
+  background: #f7f7f7
+  width 100%
+  z-index 100
   
   .menu 
     height 106px
@@ -13,10 +16,11 @@
     bordered-center($grey, 21px, $dark)
     padding 0 0 5px 0
     black()
+    cursor pointer
     &:first-child 
       margin-left 0px
     
-  &__item_active &__link
+  &__link.active
     color $dark
     +before('')
       transform scaleX(1)
@@ -41,3 +45,7 @@
   &__button.active 
     +after()
       content '-'
+      
+.is-sticky 
+  position: relative 
+  z-index: 1

@@ -1,21 +1,43 @@
 .module__grid
   
+  .the-sizer
+  .the-sizer2
+    width 50%
+    
+    
   &__img 
     width 100%
     display: block
+    height auto
+    opacity 0
+    transform translateY(60px)
+    trs()
+    position: relative
   
   &__item 
-    position: relative
-    opacity 0
     overflow: hidden
+    width 50%
+
+  &__item:hover &__img 
+    transform scale(1.1)
+    trs()
     
   &__item_blue 
-    padding 50px
-    opacity 0
+    padding: 105px 0 0 105px;
     trs()
+    background: $dark
     &:hover 
-      background: rgba(48, 48, 48, 0.93) !important
+      span
+        opacity 0.7
+        trs()
+      //background: $blue
       trs()
+    //   background: rgba(48, 48, 48, 0.93) !important
+    //   trs() 
+    
+    .module__grid__name
+    .module__grid__cat
+      display: block
     
   &__item:hover &__layer 
     opacity 1 
@@ -31,17 +53,19 @@
     left 0px 
     width 100%
     height @width
-    padding 50px
-    background: rgba(48, 48, 48, 0.93)
+    padding 105px 0px 0px 105px
+    background: rgba(29, 29, 29, 0.4);
     opacity 0
     trs()
   
   &__cat 
+    transform translateY(60px)
     color white 
     black()
     font-size 21px
     text-transform: uppercase
-    display: none
+    display: block
+    trs()
     +after('')
       display: block
       width 50px 
@@ -50,22 +74,45 @@
       margin 40px 0 35px 0
     
   &__name 
-    display: none
+    transform translateY(60px)
+    display: block
     black()
     color white
     font-size 56px
     text-transform uppercase
     line-height 70px
+    max-width 330px
+    max-height: 140px;
+    overflow: hidden;
+    trs()
     
   &__column 
-    display flex 
-    flex-direction column
-    width 50%
-  
-  &__column:last-child &__item:last-child
-    background: $blue
-    flex 1
-    
-    .module__grid__name
-    .module__grid__cat
-      display: block
+    position: relative;
+    overflow: hidden;
+    background: $dark
+      
+// body .custom .module__grid__name
+// body .custom .module__grid__cat 
+body .custom .module__grid__layer
+  transform translateY(0x)
+  trs()
+  opacity 1 !important
+body .custom .module__grid__img
+  opacity 1 !important
+  transform translateY(0px)
+  trs()
+        
+// .shuffle--animatein
+//   overflow: visible; 
+
+// .shuffle--animatein .module__grid__img
+//   opacity: 0;
+//   transform: translate(0, 220px); 
+
+// .shuffle--animatein .module__grid__img--transition
+//   -webkit-transition: all .6s ease;
+//   transition: all .6s ease; 
+
+// .shuffle--animatein .module__grid__item.in .module__grid__img
+//   opacity: 1;
+//   transform: translate(0, 0);

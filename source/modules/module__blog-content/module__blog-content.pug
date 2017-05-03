@@ -2,15 +2,15 @@ include ../icon/icon
 
 mixin module__blog-content(data)
   - var bemClass = 'module__blog'
-  section.module__blog&attributes(attributes)
-    div(class=bemClass + '__row').row.wrap 
-      .col__50(class=bemClass + '__item__content') 
+  section.module__blog&attributes(attributes).shuffle
+    div(class=bemClass + '__row').row.wrap.blog#container
+      .col__50(class=bemClass + '__item__content' data-category='all other').module__blog__single.shuffle__item.all.other 
         img(src=config.path.images + '/blog/1.jpg' , alt="", class=bemClass + '__img')
         div(class=bemClass + '__item').module__blog__item_absolute
           span(class=bemClass + '__date') 05.10.2017
           a(href='single-page.html' class=bemClass + '__link') Nominated for Webby Award for Best Association
           a(href='singel-page.html' class=bemClass + '__more') More 
-      .col__50
+      .col__50(data-category='all ecomerce').module__blog__single.shuffle__item.all.ecomerce.jsDivHeight
         div(class=bemClass + '__grid').row
           .col__50
             img(src=config.path.images + '/blog/2.jpg' , alt="", class=bemClass + '__img')
@@ -19,31 +19,31 @@ mixin module__blog-content(data)
               span(class=bemClass + '__date') 05.10.2017
               a(href='single-page.html' class=bemClass + '__link') Navat Soft Launches New Economic Devel..
               a(href='singel-page.html' class=bemClass + '__more') More 
+      .col__50(data-category='all other').module__blog__single.shuffle__item.all.other.jsDiv
         div(class=bemClass + '__twitter')
           +icon('twitter')
           p The Association of Marketing and Communication Professionals (AMCP) recognized DigitalUs for outstanding achievement with the FDF site.
           a(href="") http://efirmedia.com
-      .col__50(class=bemClass + '__item__content') 
+      .col__25(data-category='all ecomerce' class=bemClass + '__item__content').module__blog__single.shuffle__item.all.ecomerce.jsDiv
+        div(class=bemClass + '__item').module__blog__item_padding 
+          span(class=bemClass + '__date') 05.10.2017
+          a(href='single-page.html' class=bemClass + '__link') Navat Soft Launches New Economic Devel..
+          a(href='singel-page.html' class=bemClass + '__more') More 
+      .col__25.col__25_dark.module__blog__single.shuffle__item.all.social(data-category='all social').jsDiv
+        div(class=bemClass + '__item').module__blog__item_padding 
+          span(class=bemClass + '__date') 05.10.2017
+          a(href='single-page.html' class=bemClass + '__link') Navat Soft Launches New Economic Devel..
+          a(href='singel-page.html' class=bemClass + '__more') More 
+      .col__50.module__blog__single.shuffle__item.all.social(data-category='all social').jsDiv
         .row
           .col__50
-            div(class=bemClass + '__item').module__blog__item_padding 
-              span(class=bemClass + '__date') 05.10.2017
-              a(href='single-page.html' class=bemClass + '__link') Navat Soft Launches New Economic Devel..
-              a(href='singel-page.html' class=bemClass + '__more') More 
+            img(src=config.path.images + '/blog/4.jpg' , alt="", class=bemClass + '__img').jsImgHeight
           .col__50
             div(class=bemClass + '__item').module__blog__item_padding 
               span(class=bemClass + '__date') 05.10.2017
               a(href='single-page.html' class=bemClass + '__link') Navat Soft Launches New Economic Devel..
               a(href='singel-page.html' class=bemClass + '__more') More 
-        .row
-          .col__50
-            img(src=config.path.images + '/blog/4.jpg' , alt="", class=bemClass + '__img')
-          .col__50
-            div(class=bemClass + '__item').module__blog__item_padding 
-              span(class=bemClass + '__date') 05.10.2017
-              a(href='single-page.html' class=bemClass + '__link') Navat Soft Launches New Economic Devel..
-              a(href='singel-page.html' class=bemClass + '__more') More 
-      .col__50
+      .col__50.module__blog__single.shuffle__item.all.travel(data-category='all travel').jsDiv
         .row
           .col__50
             img(src=config.path.images + '/blog/3.jpg' , alt="", class=bemClass + '__img')
@@ -52,7 +52,9 @@ mixin module__blog-content(data)
               span(class=bemClass + '__date') 05.10.2017
               a(href='single-page.html' class=bemClass + '__link') Navat Soft Launches New Economic Devel..
               a(href='singel-page.html' class=bemClass + '__more') More 
+      .col__50.col__50.module__blog__single.shuffle__item.all.travel(data-category='all travel').jsDiv
         div(class=bemClass + '__twitter')
           +icon('twitter')
           p The Association of Marketing and Communication Professionals (AMCP) recognized DigitalUs for outstanding achievement with the FDF site.
           a(href="") http://efirmedia.com
+      .my-sizer-element

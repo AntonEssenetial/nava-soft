@@ -1,37 +1,42 @@
-$s-width = 22px
 
 .module__social
   
   a 
     position: relative 
     top 2px
+    display: block
   
   &__row 
     width 300px
     margin 0 auto
     height 107px
   
+
+  svg
+    width 22px
+    height 22px
+    
   .icon
-    color $dark
-    opacity: 0.6
-    trs()
+  svg
+    display: block
+    color $grey
   
     &:hover 
-      opacity 1 
-      trs()
+      color $dark
+      
       
     &_facebook 
-      height $s-width 
-      width $s-width
+      height 22px 
+      width 22px
       
     &_google 
-      height $s-width 
-      width $s-width
+      height 22px 
+      width 22px
       
     &_linkedin 
-      height $s-width
-      width $s-width
+      height 22px
+      width 22px
       
     &_twitter 
-      height $s-width
-      width $s-width
+      height 22px
+      width 22px

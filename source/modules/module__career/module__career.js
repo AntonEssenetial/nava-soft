@@ -6,7 +6,7 @@
         $('body').addClass('jsOver')
     });
 
-    $('.icon_close ').click(function(event) {
+    $('.popup__close').click(function(event) {
         $('.popup').removeClass('jsVisible')
         $('body').removeClass('jsOver')
     });

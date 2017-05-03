@@ -33,7 +33,7 @@
     <meta name="theme-color" content="#333366" /> </head>
   <body class="page">
     <div class="page__wrapper">
-      <div class="header">
+      <header class="header" id="header">
         <div class="container">
           <div class="header__row row center between">
             <a class="header__logo" href="home.html">Navatsoft </a>
@@ -65,7 +65,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </header>
       <main class="main">
         <section class="page__projects">
           <div class="container">
@@ -80,109 +80,438 @@
                 <span class="module__about-top__str-2 jsScroll">Scroll</span>
               </div>
             </section>
-            <div class="side-nav__button jsSideNav">Projects</div>
             <nav class="side-nav">
-              <ul class="menu row center">
-                <li class="side-nav__item side-nav__item_active">
-                  <a class="side-nav__link" href="projects.html">All</a>
-                </li>
-                <li class="side-nav__item">
-                  <a class="side-nav__link" href="projects.html">Social</a>
-                </li>
-                <li class="side-nav__item">
-                  <a class="side-nav__link" href="projects.html">Ecomerce</a>
-                </li>
-                <li class="side-nav__item">
-                  <a class="side-nav__link" href="projects.html">Travel</a>
-                </li>
-                <li class="side-nav__item">
-                  <a class="side-nav__link" href="projects.html">Other</a>
-                </li>
+              <ul class="menu row center filter-options">
+                <li class="side-nav__item side-nav__link active" data-filter=".all">All</li>
+                <li class="side-nav__item side-nav__link" data-filter=".social">Social</li>
+                <li class="side-nav__item side-nav__link" data-filter=".ecomerce">Ecomerce</li>
+                <li class="side-nav__item side-nav__link" data-filter=".travel">Travel</li>
+                <li class="side-nav__item side-nav__link" data-filter=".other">Other</li>
               </ul>
             </nav>
-            <section class="module__grid">
-              <div class="module__grid__row row between wrap">
-                <div class="module__grid__column">
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/1.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/3.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/5.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/7.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/9.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/11.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
+            <section class="module__grid shuffle">
+              <div class="module__grid__column" id="container">
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
                 </div>
-                <div class="module__grid__column">
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/2.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/4.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/11.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/8.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/10.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
                 </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all social" data-category="all social">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all other" data-category="all other">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all ecomerce" data-category="all ecomerce">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid shuffle__item all travel" data-category="all travel">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">categroy</span>
+                    <span class="module__grid__name animated fadeInUp">name</span>
+                  </a>
+                </div>
+                <div class="the-sizer"></div>
               </div>
             </section>
             <section class="module__together jsBg">
@@ -210,7 +539,7 @@
         </div>
       </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="assets/js/plugins/plugins.min.js"></script>
     <script src="assets/js/main/main.min.js"></script>
   </body>

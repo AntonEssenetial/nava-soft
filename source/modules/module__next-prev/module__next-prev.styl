@@ -7,6 +7,7 @@
   &__item
     width 50%
     position: relative
+    height 432px
     &:first-child 
       text-align: right
       .module__next-prev__name
@@ -23,30 +24,32 @@
     top 0px 
     left @top
     padding 80px 100px
+    transition ease-in-out .5s
     &:hover 
       background rgba(35, 35, 35, 0.9);
-      trs()
+      transition ease-in-out .5s
       
   &__link:hover &__post 
   &__link:hover &__name
     color white
+    transition ease-in-out .5s
     
   &__post 
     font-size 21px 
     color #272727
-    bold()
+    black()
     display: inline-block
     text-transform: uppercase
     
   &__name 
     font-size 52px
     color $dark 
-    bold()
+    black()
     display: inline-block
     text-transform: uppercase
     bottom 0px 
     position absolute
-    max-height: 94px;
+    max-height: 126px;
     overflow: hidden;
 
     

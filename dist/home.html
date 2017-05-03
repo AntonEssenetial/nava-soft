@@ -33,7 +33,7 @@
     <meta name="theme-color" content="#333366" /> </head>
   <body class="page">
     <div class="page__wrapper">
-      <div class="header">
+      <header class="header" id="header">
         <div class="container">
           <div class="header__row row center between">
             <a class="header__logo" href="home.html">Navatsoft </a>
@@ -65,7 +65,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </header>
       <main class="main">
         <section class="page__main">
           <div class="container">
@@ -145,53 +145,50 @@
                 </div>
               </div>
             </section>
-            <section class="module__grid">
-              <div class="module__grid__row row between wrap">
-                <div class="module__grid__column">
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/1.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/3.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/5.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
+            <section class="module__grid shuffle3">
+              <div class="module__grid__column shuff" data-isotope="{ &quot;itemSelector&quot;: &quot;.module__grid__item&quot;, &quot;layoutMode&quot;: &quot;packery&quot; }">
+                <div class="module__grid__item jsGrid jsShuf2">
+                  <img class="module__grid__img" src="assets/images/projects/1.jpg" alt="Formula Palmer Audi" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">Design / Development</span>
+                    <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
+                  </a>
                 </div>
-                <div class="module__grid__column">
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/2.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
-                  <div class="module__grid__item jsGrid">
-                    <img class="module__grid__img" src="assets/images/projects/4.jpg" alt="Formula Palmer Audi" />
-                    <a class="module__grid__layer" href="single-page.html">
-                      <span class="module__grid__cat animated fadeInUp">Design / Development</span>
-                      <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
-                    </a>
-                  </div>
-                  <div class="module__grid__item module__grid__item_blue jsGrid">
-                    <a href="">
-                      <span class="module__grid__cat">+30 project</span>
-                      <span class="module__grid__name">View all</span>
-                    </a>
-                  </div>
+                <div class="module__grid__item jsGrid jsShuf2">
+                  <img class="module__grid__img" src="assets/images/projects/2.jpg" alt="Formula Palmer Audi" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">Design / Development</span>
+                    <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
+                  </a>
                 </div>
+                <div class="module__grid__item jsGrid jsShuf2">
+                  <img class="module__grid__img" src="assets/images/projects/3.jpg" alt="Formula Palmer Audi" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">Design / Development</span>
+                    <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid jsShuf2">
+                  <img class="module__grid__img" src="assets/images/projects/4.jpg" alt="Formula Palmer Audi" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">Design / Development</span>
+                    <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
+                  </a>
+                </div>
+                <div class="module__grid__item jsGrid jsShuf2">
+                  <img class="module__grid__img" src="assets/images/projects/5.jpg" alt="Formula Palmer Audi" />
+                  <a class="module__grid__layer" href="single-page.html">
+                    <span class="module__grid__cat animated fadeInUp">Design / Development</span>
+                    <span class="module__grid__name animated fadeInUp">Formula Palmer Audi</span>
+                  </a>
+                </div>
+                <div class="module__grid__item module__grid__item_blue jsShuf2">
+                  <a href="">
+                    <span class="module__grid__cat">+30 project</span>
+                    <span class="module__grid__name">View all</span>
+                  </a>
+                </div>
+                <div class="the-sizer2"></div>
               </div>
             </section>
             <section class="module__about-us jsHeight2 jsBg">
@@ -272,7 +269,7 @@
         </div>
       </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="assets/js/plugins/plugins.min.js"></script>
     <script src="assets/js/main/main.min.js"></script>
   </body>
